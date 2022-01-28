@@ -1,10 +1,10 @@
-# MyFirst_IOS_StudyMaterial
+# C_Language
 
 [![Author compliant](https://img.shields.io/badge/Author-Jifengzhiyu-yellow.svg "Author:Jifengzhiyu")](https://github.com/jifengzhiyu/MyFirst_IOS_StudyMaterial "Author")
 
 ![Domain](https://img.shields.io/badge/Domain-IOS-brightgreen.svg "Domain:IOS")
 
-![Language](https://img.shields.io/badge/Language-C-blueviolet.svg "Language:C") ![Language](https://img.shields.io/badge/Language-ObjectiveC-blueviolet.svg "Language:ObjectiveC") ![Language](https://img.shields.io/badge/Language-Swift-blueviolet.svg "Language:Swift") 
+![Language](https://img.shields.io/badge/Language-C-blueviolet.svg "Language:C") 
 
 我IOS学习之旅的第一份学习资料，大部分集中在黑马iOS学习，之前还有翁恺的C语言；
 
@@ -12,7 +12,7 @@
 
 ```详细内容请看分支```
 
-## 分支目录
+## 目录
 
 
 
