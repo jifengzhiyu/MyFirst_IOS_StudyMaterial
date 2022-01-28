@@ -12,7 +12,7 @@ ObjectiveC语言学习资料，来自黑马IOS资料ObjectiveC语言部分。
 
 #### 1语法基础
 
-01. Objective-C概述
+01.Objective-C概述
 
 02.快速演示第1个OC程序
 
