@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  自定义键盘datePicker
+//
+//  Created by 翟佳阳 on 2021/9/27.
+//
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#ifdef __OBJC__
+#import "Tool.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef DEBUG
+
+#define JFLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define JFLog(...)
+
+#endif
+
+#endif
+
+#endif /* PrefixHeader_pch */

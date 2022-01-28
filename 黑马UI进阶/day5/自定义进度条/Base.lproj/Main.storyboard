@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8tV-jU-To7" customClass="TestView">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N10-Iw-THf">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="N10-Iw-THf" secondAttribute="bottom" id="8L7-ey-dTh"/>
+                                    <constraint firstItem="N10-Iw-THf" firstAttribute="leading" secondItem="8tV-jU-To7" secondAttribute="leading" id="D58-rL-RVT"/>
+                                    <constraint firstItem="N10-Iw-THf" firstAttribute="top" secondItem="8tV-jU-To7" secondAttribute="top" id="VBM-by-YCT"/>
+                                    <constraint firstAttribute="height" constant="300" id="XCI-i3-iAn"/>
+                                    <constraint firstAttribute="width" constant="300" id="wYZ-Ch-5mc"/>
+                                    <constraint firstAttribute="trailing" secondItem="N10-Iw-THf" secondAttribute="trailing" id="yie-wc-3yC"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="progressLbl" destination="N10-Iw-THf" id="tIc-TO-Jyk"/>
+                                </connections>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="frX-9O-yVl">
+                                <rect key="frame" x="55" y="625" width="304" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="g4j-bc-nmX"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="ProgressChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="EuV-LC-sHi"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="frX-9O-yVl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="60H-3O-7Dc"/>
+                            <constraint firstItem="frX-9O-yVl" firstAttribute="top" secondItem="8tV-jU-To7" secondAttribute="bottom" constant="27" id="MIK-MH-0Gs"/>
+                            <constraint firstItem="8tV-jU-To7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vz7-eI-wri"/>
+                            <constraint firstItem="8tV-jU-To7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tvq-pp-4YD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="8tV-jU-To7" id="ojf-Gg-4wA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="94.419642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

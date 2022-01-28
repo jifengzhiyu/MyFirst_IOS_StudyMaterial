@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<string>aaa</string>
+		<string>sss</string>
+		<string>ddd</string>
+		<string>fff</string>
+		<string>ggg</string>
+		<string>hhh</string>
+		<string>jjj</string>
+		<string>zzz</string>
+		<string>xxx</string>
+		<string>ccc</string>
+		<string>vvv</string>
+	</array>
+	<array>
+		<string>111</string>
+		<string>222</string>
+		<string>333</string>
+		<string>444</string>
+		<string>555</string>
+		<string>666</string>
+		<string>777</string>
+		<string>888</string>
+		<string>999</string>
+		<string>000</string>
+		<string>121</string>
+		<string>131</string>
+		<string>141</string>
+		<string>151</string>
+	</array>
+	<array>
+		<string>阿中</string>
+		<string>删除</string>
+		<string>指针</string>
+		<string>该v</string>
+		<string>二</string>
+		<string>天天</string>
+		<string>方法</string>
+		<string>哈哈</string>
+		<string>你能</string>
+		<string>买买买</string>
+		<string>看看</string>
+		<string>来了</string>
+		<string>品牌</string>
+		<string>嗯嗯</string>
+	</array>
+</array>
+</plist>
