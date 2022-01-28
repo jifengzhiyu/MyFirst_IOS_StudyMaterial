@@ -1,6 +1,6 @@
 # C_Language
 
-[![Author compliant](https://img.shields.io/badge/Author-Jifengzhiyu-yellow.svg "Author:Jifengzhiyu")](https://github.com/jifengzhiyu/MyFirst_IOS_StudyMaterial "Author")
+[![Author compliant](https://img.shields.io/badge/Author-Jifengzhiyu-yellow.svg "Author:Jifengzhiyu")](https://github.com/jifengzhiyu "Author")
 
 ![Domain](https://img.shields.io/badge/Domain-IOS-brightgreen.svg "Domain:IOS")
 
