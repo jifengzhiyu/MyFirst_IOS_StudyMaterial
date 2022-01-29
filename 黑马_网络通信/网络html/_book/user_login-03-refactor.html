@@ -1,0 +1,1693 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>代码重构 | iOS 网络编程</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="./cipher.html" />
+    
+    
+    <link rel="prev" href="./user_login-02-save_&amp;_load_user_info.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="0.5.3" data-basepath="." data-revision="Mon Jun 15 2015 01:39:42 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        网络
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1" data-path="basic.html">
+            
+                
+                    <a href="./basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                        基本概念
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1.1" data-path="basic-00-apache.html">
+            
+                
+                    <a href="./basic-00-apache.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.1.</b>
+                        
+                        配置 Apache 服务器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.2" data-path="basic-01-http.html">
+            
+                
+                    <a href="./basic-01-http.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.2.</b>
+                        
+                        HTTP
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.3" data-path="basic-02-dev.html">
+            
+                
+                    <a href="./basic-02-dev.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.3.</b>
+                        
+                        开发方案
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.4" data-path="basic-03-nsurlconnection.html">
+            
+                
+                    <a href="./basic-03-nsurlconnection.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.4.</b>
+                        
+                        NSURLConnection
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2" data-path="socket.html">
+            
+                
+                    <a href="./socket.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                        socket
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.2.1" data-path="socket-01-basic_code.html">
+            
+                
+                    <a href="./socket-01-basic_code.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.1.</b>
+                        
+                        Socket 基本演练
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.2" data-path="socket-02-chat.html">
+            
+                
+                    <a href="./socket-02-chat.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.2.</b>
+                        
+                        Socket 聊天
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.3" data-path="socket-03-baidu.html">
+            
+                
+                    <a href="./socket-03-baidu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.3.</b>
+                        
+                        Socket 加载百度
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3" data-path="serialization.html">
+            
+                
+                    <a href="./serialization.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                        数据解析
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.3.1" data-path="serialization-01-json.html">
+            
+                
+                    <a href="./serialization-01-json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.1.</b>
+                        
+                        JSON 解析
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.3.1.1" data-path="json-01-framework.html">
+            
+                
+                    <a href="./json-01-framework.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.1.1.</b>
+                        
+                        JSON 解析第三方框架
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.2" data-path="serialization-03-plist.html">
+            
+                
+                    <a href="./serialization-03-plist.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.2.</b>
+                        
+                        PList解析
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3" data-path="serialization-04-xml.html">
+            
+                
+                    <a href="./serialization-04-xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.</b>
+                        
+                        XML介绍
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.3.3.1" data-path="xml-01-preparation.html">
+            
+                
+                    <a href="./xml-01-preparation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.1.</b>
+                        
+                        准备工作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3.2" data-path="xml-02-parser.html">
+            
+                
+                    <a href="./xml-02-parser.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.2.</b>
+                        
+                        解析
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3.3" data-path="xml-03-tableview.html">
+            
+                
+                    <a href="./xml-03-tableview.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.3.</b>
+                        
+                        绑定表格
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3.4" data-path="xml-04-copy_properties.html">
+            
+                
+                    <a href="./xml-04-copy_properties.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.4.</b>
+                        
+                        Copy 属性
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3.5" data-path="xml-05-refactor.html">
+            
+                
+                    <a href="./xml-05-refactor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.5.</b>
+                        
+                        重构
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3.6" data-path="xml-06-dom.html">
+            
+                
+                    <a href="./xml-06-dom.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.6.</b>
+                        
+                        DOM 解析
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4" data-path="get_&amp;_post.html">
+            
+                
+                    <a href="./get_&amp;_post.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                        GET &amp; POST
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.4.1" data-path="get_&amp;_post-01-cachedurlresponse.html">
+            
+                
+                    <a href="./get_&amp;_post-01-cachedurlresponse.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.</b>
+                        
+                        GET 缓存
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5" data-path="user_login.html">
+            
+                
+                    <a href="./user_login.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.</b>
+                        
+                        用户登录
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.5.1" data-path="user_login-01-get&amp;post_login.html">
+            
+                
+                    <a href="./user_login-01-get&amp;post_login.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.1.</b>
+                        
+                        GET &amp; POST 登录
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5.2" data-path="user_login-02-save_&amp;_load_user_info.html">
+            
+                
+                    <a href="./user_login-02-save_&amp;_load_user_info.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.2.</b>
+                        
+                        保存 &amp; 加载用户信息
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="0.5.3" data-path="user_login-03-refactor.html">
+            
+                
+                    <a href="./user_login-03-refactor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.3.</b>
+                        
+                        代码重构
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6" data-path="cipher.html">
+            
+                
+                    <a href="./cipher.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.</b>
+                        
+                        密码学
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.6.1" data-path="cipher-01-base64.html">
+            
+                
+                    <a href="./cipher-01-base64.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.1.</b>
+                        
+                        Base64
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.2" data-path="cipher-02-md5.html">
+            
+                
+                    <a href="./cipher-02-md5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.2.</b>
+                        
+                        MD5
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.3" data-path="cipher-03-key_chain.html">
+            
+                
+                    <a href="./cipher-03-key_chain.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.3.</b>
+                        
+                        钥匙串
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.4" data-path="cipher-04-aes.html">
+            
+                
+                    <a href="./cipher-04-aes.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.4.</b>
+                        
+                        对称加密算法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.5" data-path="cipher-05-rsa.html">
+            
+                
+                    <a href="./cipher-05-rsa.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.5.</b>
+                        
+                        非对称加密算法
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7" data-path="post_method.html">
+            
+                
+                    <a href="./post_method.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.</b>
+                        
+                        POST增强
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.7.1" data-path="post_method-01-upload_file.html">
+            
+                
+                    <a href="./post_method-01-upload_file.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.1.</b>
+                        
+                        上传单个文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.2" data-path="post_method-02-upload_multi_files.html">
+            
+                
+                    <a href="./post_method-02-upload_multi_files.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.2.</b>
+                        
+                        上传多个文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.3" data-path="post_method_03_restful.html">
+            
+                
+                    <a href="./post_method_03_restful.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.3.</b>
+                        
+                        RESTful设计风格
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.4" data-path="post_method-04-post_json.html">
+            
+                
+                    <a href="./post_method-04-post_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.4.</b>
+                        
+                        POST JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.5" data-path="post_method-05-post_custom_object.html">
+            
+                
+                    <a href="./post_method-05-post_custom_object.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.5.</b>
+                        
+                        POST 自定义对象
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8" data-path="download.html">
+            
+                
+                    <a href="./download.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.</b>
+                        
+                        NSURLConnection下载
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.8.1" data-path="download-01-head_method.html">
+            
+                
+                    <a href="./download-01-head_method.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.1.</b>
+                        
+                        HTTP HEAD方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.2" data-path="download-02-nsurlconnectiondownloaddelegate.html">
+            
+                
+                    <a href="./download-02-nsurlconnectiondownloaddelegate.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.2.</b>
+                        
+                        NSURLConnectionDownloadDelegate
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.3" data-path="download-03-download_progress.html">
+            
+                
+                    <a href="./download-03-download_progress.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.3.</b>
+                        
+                        下载进度
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.4" data-path="download-04-nsfilehandle.html">
+            
+                
+                    <a href="./download-04-nsfilehandle.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.4.</b>
+                        
+                        NSFileHandle拼接文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.5" data-path="download-05-nsoutputstream.html">
+            
+                
+                    <a href="./download-05-nsoutputstream.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.5.</b>
+                        
+                        NSOutputStream拼接文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.6" data-path="download-06-resume_download.html">
+            
+                
+                    <a href="./download-06-resume_download.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.6.</b>
+                        
+                        断点续传
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.7" data-path="download-07-multithread.html">
+            
+                
+                    <a href="./download-07-multithread.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.7.</b>
+                        
+                        多线程
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.8" data-path="download-08-call_back.html">
+            
+                
+                    <a href="./download-08-call_back.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.8.</b>
+                        
+                        完成回调
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.9" data-path="download-09-pause_download.html">
+            
+                
+                    <a href="./download-09-pause_download.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.9.</b>
+                        
+                        暂停下载
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.10" data-path="download-10-progress_view.html">
+            
+                
+                    <a href="./download-10-progress_view.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.10.</b>
+                        
+                        下载进度视图
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.11" data-path="download-11-download_manager.html">
+            
+                
+                    <a href="./download-11-download_manager.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.11.</b>
+                        
+                        下载管理器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.12" data-path="download-12-nsoperation.html">
+            
+                
+                    <a href="./download-12-nsoperation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.12.</b>
+                        
+                        NSOperation
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9" data-path="nsurlsession.html">
+            
+                
+                    <a href="./nsurlsession.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.</b>
+                        
+                        NSURLSession
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.9.1" data-path="nsurlsession-01-common_code.html">
+            
+                
+                    <a href="./nsurlsession-01-common_code.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.1.</b>
+                        
+                        常见代码
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9.2" data-path="nsurlsession-02-download.html">
+            
+                
+                    <a href="./nsurlsession-02-download.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.2.</b>
+                        
+                        下载 &amp; 解压缩
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.9.2.1" data-path="nsurlsession-02-download-01-progress.html">
+            
+                
+                    <a href="./nsurlsession-02-download-01-progress.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.2.1.</b>
+                        
+                        下载进度跟进
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9.2.2" data-path="nsurlsession-02-download-02-resume_data.html">
+            
+                
+                    <a href="./nsurlsession-02-download-02-resume_data.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.2.2.</b>
+                        
+                        断点续传
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9.2.3" data-path="nsurlsession-02-download-03-download_manager.html">
+            
+                
+                    <a href="./nsurlsession-02-download-03-download_manager.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.2.3.</b>
+                        
+                        下载管理器
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9.3" data-path="nsurlsession-03-webdav.html">
+            
+                
+                    <a href="./nsurlsession-03-webdav.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.3.</b>
+                        
+                        WebDav演练
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9.4" data-path="nsurlsession-04-configuration.html">
+            
+                
+                    <a href="./nsurlsession-04-configuration.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.4.</b>
+                        
+                        Configuration
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9.5" data-path="nsurlsession-05-post_upload.html">
+            
+                
+                    <a href="./nsurlsession-05-post_upload.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.5.</b>
+                        
+                        POST 上传
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.10" data-path="https.html">
+            
+                
+                    <a href="./https.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.10.</b>
+                        
+                        HTTPS
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.11" data-path="afnetworking.html">
+            
+                
+                    <a href="./afnetworking.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.11.</b>
+                        
+                        AFNetworking
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.11.1" data-path="afnetworking-01-demo_app.html">
+            
+                
+                    <a href="./afnetworking-01-demo_app.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.11.1.</b>
+                        
+                        官方演示程序
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.11.2" data-path="afnetworking-02-practise.html">
+            
+                
+                    <a href="./afnetworking-02-practise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.11.2.</b>
+                        
+                        代码演练
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.12" data-path="uiwebview.html">
+            
+                
+                    <a href="./uiwebview.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.12.</b>
+                        
+                        UIWebView
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.13" data-path="charles.html">
+            
+                
+                    <a href="./charles.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.13.</b>
+                        
+                        Charles
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.13.1" data-path="charles-01-163_data.html">
+            
+                
+                    <a href="./charles-01-163_data.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.13.1.</b>
+                        
+                        拦截网易数据
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.14" data-path="biometrics.html">
+            
+                
+                    <a href="./biometrics.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.14.</b>
+                        
+                        指纹识别
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15" data-path="appendix.html">
+            
+                
+                    <a href="./appendix.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.</b>
+                        
+                        附录
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.15.1" data-path="appendix-01-archiver_&amp;_unarchiver.html">
+            
+                
+                    <a href="./appendix-01-archiver_&amp;_unarchiver.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.1.</b>
+                        
+                        归档 &amp; 解档
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.2" data-path="appendix-02-caanimation.html">
+            
+                
+                    <a href="./appendix-02-caanimation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.2.</b>
+                        
+                        核心动画
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.3" data-path="appendix-03-kvo.html">
+            
+                
+                    <a href="./appendix-03-kvo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.3.</b>
+                        
+                        KVO
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.4" data-path="appendix-04-nil&amp;null.html">
+            
+                
+                    <a href="./appendix-04-nil&amp;null.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.4.</b>
+                        
+                        nil&amp;null&amp;Nil&amp;NSNull
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.5" data-path="appendix-http_request_field.html">
+            
+                
+                    <a href="./appendix-http_request_field.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.5.</b>
+                        
+                        常用 HTTP 请求字段
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.6" data-path="appendix-url_properties.html">
+            
+                
+                    <a href="./appendix-url_properties.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.6.</b>
+                        
+                        NSURL常用属性
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.7" data-path="appendix-cocoapods.html">
+            
+                
+                    <a href="./appendix-cocoapods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.7.</b>
+                        
+                        Cocoapods
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >iOS 网络编程</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E4%BB%A3%E7%A0%81%E9%87%8D%E6%9E%84">&#x4EE3;&#x7801;&#x91CD;&#x6784;</h1>
+<h2 id="1-%E5%8D%95%E4%BE%8B">1. &#x5355;&#x4F8B;</h2>
+<pre><code class="lang-objc">+ (instancetype)sharedNetworkTools {
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">id</span> instance;
+
+    <span class="hljs-keyword">static</span> <span class="hljs-built_in">dispatch_once_t</span> onceToken;
+    <span class="hljs-built_in">dispatch_once</span>(&amp;onceToken, ^{
+        instance = [[<span class="hljs-keyword">self</span> alloc] init];
+    });
+
+    <span class="hljs-keyword">return</span> instance;
+}
+</code></pre>
+<h2 id="2-%E4%BB%A3%E7%A0%81%E9%87%8D%E6%9E%84">2. &#x4EE3;&#x7801;&#x91CD;&#x6784;</h2>
+<h3 id="1-%E5%A4%8D%E5%88%B6%E4%B8%BB%E6%96%B9%E6%B3%95">1&gt; &#x590D;&#x5236;&#x4E3B;&#x65B9;&#x6CD5;</h3>
+<pre><code class="lang-objc">- (<span class="hljs-keyword">void</span>)userLogin {
+    <span class="hljs-built_in">NSString</span> *pwd = [<span class="hljs-keyword">self</span> timePassword];
+
+    <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;&#x53D1;&#x9001;&#x7684;&#x5BC6;&#x7801;&#x662F; %@&quot;</span>, pwd);
+
+    <span class="hljs-built_in">NSURL</span> *url = [<span class="hljs-built_in">NSURL</span> URLWithString:<span class="hljs-string">@&quot;http://localhost/loginhmac.php&quot;</span>];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+
+    request<span class="hljs-variable">.HTTPMethod</span> = <span class="hljs-string">@&quot;POST&quot;</span>;
+    <span class="hljs-built_in">NSString</span> *bodyStr = [<span class="hljs-built_in">NSString</span> stringWithFormat:<span class="hljs-string">@&quot;username=%@&amp;password=%@&quot;</span>, <span class="hljs-keyword">self</span><span class="hljs-variable">.username</span>, pwd];
+    request<span class="hljs-variable">.HTTPBody</span> = [bodyStr dataUsingEncoding:NSUTF8StringEncoding];
+
+    [<span class="hljs-built_in">NSURLConnection</span> sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, <span class="hljs-built_in">NSData</span> *data, <span class="hljs-built_in">NSError</span> *connectionError) {
+
+        <span class="hljs-keyword">id</span> result = [NSJSONSerialization JSONObjectWithData:data options:<span class="hljs-number">0</span> error:<span class="hljs-literal">NULL</span>];
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;%@ - %@&quot;</span>, response, result);
+
+        <span class="hljs-keyword">if</span> ([result[<span class="hljs-string">@&quot;userId&quot;</span>] intValue] &gt; <span class="hljs-number">0</span>) {
+            [<span class="hljs-keyword">self</span> saveUserInfo];
+        }
+    }];
+}
+</code></pre>
+<h3 id="2-%E6%B7%BB%E5%8A%A0%E5%B1%9E%E6%80%A7">2&gt; &#x6DFB;&#x52A0;&#x5C5E;&#x6027;</h3>
+<pre><code class="lang-objc"><span class="hljs-comment">///  &#x7528;&#x6237;&#x540D;</span>
+<span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">copy</span>) <span class="hljs-built_in">NSString</span> *username;
+<span class="hljs-comment">///  &#x7528;&#x6237;&#x5BC6;&#x7801;</span>
+<span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">copy</span>) <span class="hljs-built_in">NSString</span> *pwd;
+</code></pre>
+<h3 id="3-%E5%A4%8D%E5%88%B6%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95">3&gt; &#x590D;&#x5236;&#x76F8;&#x5173;&#x65B9;&#x6CD5;</h3>
+<pre><code class="lang-objc"><span class="hljs-preprocessor">#pragma mark - &#x79C1;&#x6709;&#x65B9;&#x6CD5;</span>
+- (<span class="hljs-built_in">NSString</span> *)timePassword {
+    <span class="hljs-comment">// 1. &#x751F;&#x6210;key</span>
+    <span class="hljs-built_in">NSString</span> *key = <span class="hljs-string">@&quot;itheima&quot;</span><span class="hljs-variable">.md5String</span>;
+    <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;HMAC Key - %@&quot;</span>, key);
+
+    <span class="hljs-comment">// 2. &#x5BF9;&#x5BC6;&#x7801;&#x8FDB;&#x884C; hmac &#x52A0;&#x5BC6;</span>
+    <span class="hljs-built_in">NSString</span> *pwd = [<span class="hljs-keyword">self</span><span class="hljs-variable">.pwd</span> hmacMD5StringWithKey:key];
+
+    <span class="hljs-comment">// 3. &#x83B7;&#x53D6;&#x670D;&#x52A1;&#x5668;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;</span>
+    <span class="hljs-built_in">NSURL</span> *url = [<span class="hljs-built_in">NSURL</span> URLWithString:<span class="hljs-string">@&quot;http://localhost/hmackey.php&quot;</span>];
+    <span class="hljs-built_in">NSData</span> *data = [<span class="hljs-built_in">NSData</span> dataWithContentsOfURL:url];
+    <span class="hljs-built_in">NSDictionary</span> *dict = [NSJSONSerialization JSONObjectWithData:data options:<span class="hljs-number">0</span> error:<span class="hljs-literal">NULL</span>];
+    <span class="hljs-built_in">NSString</span> *dateStr = dict[<span class="hljs-string">@&quot;key&quot;</span>];
+    <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;%@&quot;</span>, dateStr);
+
+    <span class="hljs-comment">// 4. &#x5C06;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;&#x62FC;&#x63A5;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x52A0;&#x5BC6;&#x5BC6;&#x7801;&#x7684;&#x672B;&#x5C3E;</span>
+    pwd = [pwd stringByAppendingString:dateStr];
+
+    <span class="hljs-comment">// 5. &#x8FD4;&#x56DE;&#x62FC;&#x63A5;&#x7ED3;&#x679C;&#x7684;&#x518D;&#x6B21; hmac</span>
+    <span class="hljs-keyword">return</span> [pwd hmacMD5StringWithKey:key];
+}
+
+<span class="hljs-preprocessor">#pragma mark - save &amp; load user info</span>
+<span class="hljs-preprocessor">#define HMUsernameKey @<span class="hljs-title">&quot;HMUsernameKey&quot;</span></span>
+<span class="hljs-preprocessor">#define HMUserPasswordKey @<span class="hljs-title">&quot;HMUserPasswordKey&quot;</span></span>
+<span class="hljs-comment">///  &#x4FDD;&#x5B58;&#x7528;&#x6237;&#x4FE1;&#x606F;</span>
+- (<span class="hljs-keyword">void</span>)saveUserInfo {
+
+    <span class="hljs-built_in">NSUserDefaults</span> *defaults = [<span class="hljs-built_in">NSUserDefaults</span> standardUserDefaults];
+
+    <span class="hljs-comment">// iOS 8.0 &#x4F1A;&#x76F4;&#x63A5;&#x5199;&#x5165;&#x6C99;&#x76D2;&#xFF0C;&#x65E0;&#x9700;&#x518D;&#x4F7F;&#x7528; `[defaults synchronize];`</span>
+    [defaults setObject:<span class="hljs-keyword">self</span><span class="hljs-variable">.username</span> forKey:HMUsernameKey];
+
+    <span class="hljs-comment">// &#x5C06;&#x7528;&#x6237;&#x5BC6;&#x7801;&#x4FDD;&#x5B58;&#x5728;&#x94A5;&#x5319;&#x4E32;</span>
+    <span class="hljs-built_in">NSString</span> *bundleId = [<span class="hljs-built_in">NSBundle</span> mainBundle]<span class="hljs-variable">.bundleIdentifier</span>;
+    [SSKeychain setPassword:<span class="hljs-keyword">self</span><span class="hljs-variable">.pwd</span> forService:bundleId account:<span class="hljs-keyword">self</span><span class="hljs-variable">.username</span>];
+}
+</code></pre>
+<h3 id="4-%E5%BC%80%E6%94%BE%E4%B8%BB%E6%96%B9%E6%B3%95">4&gt; &#x5F00;&#x653E;&#x4E3B;&#x65B9;&#x6CD5;</h3>
+<pre><code class="lang-objc"><span class="hljs-comment">/// &#x7528;&#x6237;&#x767B;&#x5F55;</span>
+- (<span class="hljs-keyword">void</span>)userLogin;
+</code></pre>
+<h3 id="5-%E5%9C%A8-appdelegate-%E4%B8%AD%E8%B0%83%E7%94%A8%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95">5&gt; &#x5728; AppDelegate &#x4E2D;&#x8C03;&#x7528;&#x7528;&#x6237;&#x767B;&#x5F55;</h3>
+<pre><code class="lang-objc">- (<span class="hljs-built_in">BOOL</span>)application:(<span class="hljs-built_in">UIApplication</span> *)application didFinishLaunchingWithOptions:(<span class="hljs-built_in">NSDictionary</span> *)launchOptions {
+    <span class="hljs-comment">// &#x7528;&#x6237;&#x767B;&#x5F55;</span>
+    [[NetworkTools sharedNetworktools] userLogin];
+
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">YES</span>;
+}
+</code></pre>
+<blockquote>
+<p>&#x8FD0;&#x884C;&#x6D4B;&#x8BD5;&#xFF0C;&#x53D1;&#x73B0;&#x6CA1;&#x6709;&#x52A0;&#x8F7D;&#x7528;&#x6237;&#x4FE1;&#x606F;</p>
+</blockquote>
+<h3 id="6-%E5%A4%8D%E5%88%B6%E5%8A%A0%E8%BD%BD%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E6%96%B9%E6%B3%95">6&gt; &#x590D;&#x5236;&#x52A0;&#x8F7D;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x65B9;&#x6CD5;</h3>
+<pre><code class="lang-objc"><span class="hljs-comment">///  &#x52A0;&#x8F7D;&#x7528;&#x6237;&#x4E0B;&#x4FE1;&#x606F;</span>
+- (<span class="hljs-keyword">void</span>)loadUserInfo {
+    <span class="hljs-built_in">NSUserDefaults</span> *defaults = [<span class="hljs-built_in">NSUserDefaults</span> standardUserDefaults];
+
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.username</span> = [defaults stringForKey:HMUsernameKey];
+
+    <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;%@&quot;</span>, [SSKeychain allAccounts]);
+    <span class="hljs-built_in">NSString</span> *bundleId = [<span class="hljs-built_in">NSBundle</span> mainBundle]<span class="hljs-variable">.bundleIdentifier</span>;
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.pwd</span> = [SSKeychain passwordForService:bundleId account:<span class="hljs-keyword">self</span><span class="hljs-variable">.username</span>];
+}
+</code></pre>
+<h3 id="7-%E5%9C%A8-%E5%8D%95%E4%BE%8B-%E6%96%B9%E6%B3%95%E4%B8%AD%E5%8A%A0%E8%BD%BD%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF">7&gt; &#x5728; <code>&#x5355;&#x4F8B;</code> &#x65B9;&#x6CD5;&#x4E2D;&#x52A0;&#x8F7D;&#x7528;&#x6237;&#x4FE1;&#x606F;</h3>
+<pre><code class="lang-objc">+ (instancetype)sharedNetwrokTools {
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">id</span> instance;
+
+    <span class="hljs-keyword">static</span> <span class="hljs-built_in">dispatch_once_t</span> onceToken;
+    <span class="hljs-built_in">dispatch_once</span>(&amp;onceToken, ^{
+        instance = [[<span class="hljs-keyword">self</span> alloc] init];
+        [instance loadUserInfo];
+    });
+    <span class="hljs-keyword">return</span> instance;
+}
+</code></pre>
+<h3 id="8-%E5%A2%9E%E5%8A%A0%E5%88%A4%E6%96%AD%EF%BC%8C%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E7%9B%B4%E6%8E%A5%E8%BF%94%E5%9B%9E">8&gt; &#x589E;&#x52A0;&#x5224;&#x65AD;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;</h3>
+<pre><code class="lang-ojbc">- (void)userLogin {
+
+    if (self.pwd == nil || self.username == nil) {
+        return;
+    }
+</code></pre>
+<h3 id="9-%E5%88%87%E6%8D%A2%E7%95%8C%E9%9D%A2">9&gt; &#x5207;&#x6362;&#x754C;&#x9762;</h3>
+<ul>
+<li>&#x5B9A;&#x4E49;&#x901A;&#x77E5;&#x5B57;&#x7B26;&#x4E32;</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-preprocessor">#define HMUserLoginStatusChangedNotification @<span class="hljs-title">&quot;HMUserLoginStatusChangedNotification&quot;</span></span>
+</code></pre>
+<ul>
+<li>&#x767B;&#x5F55;&#x6210;&#x529F;&#x53D1;&#x5E03;&#x901A;&#x77E5;</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-comment">// &#x53D1;&#x9001;&#x901A;&#x77E5;</span>
+[[<span class="hljs-built_in">NSNotificationCenter</span> defaultCenter] postNotificationName:HMUserLoginStatusChangedNotification object:<span class="hljs-string">@&quot;Main&quot;</span>];
+</code></pre>
+<ul>
+<li>&#x6CE8;&#x518C;&#x901A;&#x77E5;</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-comment">// &#x6CE8;&#x518C;&#x901A;&#x77E5;</span>
+[[<span class="hljs-built_in">NSNotificationCenter</span> defaultCenter] addObserver:<span class="hljs-keyword">self</span> selector:<span class="hljs-keyword">@selector</span>(loginStatusChanged:) name:HMUserLoginStatusChangedNotification object:<span class="hljs-literal">nil</span>];
+</code></pre>
+<ul>
+<li>&#x767B;&#x5F55;&#x72B6;&#x6001;&#x53D8;&#x5316;&#x66F4;&#x6539;&#x754C;&#x9762;</li>
+</ul>
+<pre><code class="lang-objc">- (<span class="hljs-keyword">void</span>)loginStatusChanged:(<span class="hljs-built_in">NSNotification</span> *)n {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:n<span class="hljs-variable">.object</span> bundle:<span class="hljs-literal">nil</span>];
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.window</span><span class="hljs-variable">.rootViewController</span> = sb<span class="hljs-variable">.instantiateInitialViewController</span>;
+}
+</code></pre>
+<ul>
+<li>&#x7528;&#x6237;&#x6CE8;&#x9500;</li>
+</ul>
+<pre><code class="lang-objc">- (<span class="hljs-keyword">IBAction</span>)logout:(<span class="hljs-keyword">id</span>)sender {
+    [[<span class="hljs-built_in">NSNotificationCenter</span> defaultCenter] postNotificationName:HMUserLoginStatusChangedNotification object:<span class="hljs-string">@&quot;Login&quot;</span>];
+}
+</code></pre>
+<h3 id="10-%E8%B0%83%E6%95%B4%E7%99%BB%E5%BD%95%E8%A7%86%E5%9B%BE%E6%8E%A7%E5%88%B6%E5%99%A8">10&gt; &#x8C03;&#x6574;&#x767B;&#x5F55;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;</h3>
+<pre><code class="lang-objc"><span class="hljs-preprocessor">#import <span class="hljs-title">&quot;NetworkTools.h&quot;</span></span>
+
+<span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">ViewController</span> () &lt;<span class="hljs-title">UITextFieldDelegate</span>&gt;</span>
+
+<span class="hljs-keyword">@property</span> (<span class="hljs-keyword">weak</span>, <span class="hljs-keyword">nonatomic</span>) <span class="hljs-keyword">IBOutlet</span> UITextField *usernameText;
+<span class="hljs-keyword">@property</span> (<span class="hljs-keyword">weak</span>, <span class="hljs-keyword">nonatomic</span>) <span class="hljs-keyword">IBOutlet</span> UITextField *pwdText;
+<span class="hljs-keyword">@end</span>
+
+<span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">ViewController</span></span>
+
+- (<span class="hljs-keyword">void</span>)viewDidLoad {
+    [<span class="hljs-keyword">super</span> viewDidLoad];
+
+    [<span class="hljs-keyword">self</span> loadUserInfo];
+}
+
+- (<span class="hljs-built_in">BOOL</span>)textFieldShouldReturn:(UITextField *)textField {
+    <span class="hljs-keyword">if</span> (textField == <span class="hljs-keyword">self</span><span class="hljs-variable">.usernameText</span>) {
+        [<span class="hljs-keyword">self</span><span class="hljs-variable">.pwdText</span> becomeFirstResponder];
+    } <span class="hljs-keyword">else</span> {
+        [<span class="hljs-keyword">self</span> userLogin];
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">YES</span>;
+}
+
+- (<span class="hljs-keyword">IBAction</span>)userLogin {
+    NetworkTools *tools = [NetworkTools sharedNetwrokTools];
+
+    tools<span class="hljs-variable">.username</span> = <span class="hljs-keyword">self</span><span class="hljs-variable">.usernameText</span><span class="hljs-variable">.text</span>;
+    tools<span class="hljs-variable">.pwd</span> = <span class="hljs-keyword">self</span><span class="hljs-variable">.pwdText</span><span class="hljs-variable">.text</span>;
+
+    [tools userLogin];
+}
+
+<span class="hljs-preprocessor">#pragma mark - save &amp; load user info</span>
+<span class="hljs-comment">///  &#x52A0;&#x8F7D;&#x7528;&#x6237;&#x4E0B;&#x4FE1;&#x606F;</span>
+- (<span class="hljs-keyword">void</span>)loadUserInfo {
+    NetworkTools *tools = [NetworkTools sharedNetwrokTools];
+
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.usernameText</span><span class="hljs-variable">.text</span> = tools<span class="hljs-variable">.username</span>;
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.pwdText</span><span class="hljs-variable">.text</span> = tools<span class="hljs-variable">.pwd</span>;
+}
+</code></pre>
+<h3 id="11-%E5%A4%B1%E8%B4%A5%E5%9B%9E%E8%B0%83">11&gt; &#x5931;&#x8D25;&#x56DE;&#x8C03;</h3>
+<ul>
+<li>&#x4FEE;&#x6539;&#x767B;&#x5F55;&#x65B9;&#x6CD5;</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-comment">///  &#x7528;&#x6237;&#x767B;&#x5F55;</span>
+- (<span class="hljs-keyword">void</span>)userLoginFailed:(<span class="hljs-keyword">void</span> (^)())failed;
+</code></pre>
+<ul>
+<li>&#x589E;&#x52A0;&#x56DE;&#x8C03;&#x4EE3;&#x7801;</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-keyword">if</span> (failed) {
+    failed();
+}
+</code></pre>
+<ul>
+<li>&#x4FEE;&#x6539;&#x8C03;&#x7528;&#x4EE3;&#x7801;</li>
+</ul>
+<pre><code class="lang-objc">[tools userLoginFailed:^{
+    [[[UIAlertView alloc] initWithTitle:<span class="hljs-string">@&quot;&#x63D0;&#x793A;&quot;</span> message:<span class="hljs-string">@&quot;&#x7528;&#x6237;&#x540D;&#x6216;&#x5BC6;&#x7801;&#x9519;&#x8BEF;&quot;</span> delegate:<span class="hljs-literal">nil</span> cancelButtonTitle:<span class="hljs-string">@&quot;OK&quot;</span> otherButtonTitles:<span class="hljs-literal">nil</span>, <span class="hljs-literal">nil</span>] show];
+}];
+</code></pre>
+<h3 id="12-%E5%8F%96%E6%B6%88%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%99%A8">12&gt; &#x53D6;&#x6D88;&#x9ED8;&#x8BA4;&#x542F;&#x52A8;&#x63A7;&#x5236;&#x5668;</h3>
+<ul>
+<li>&#x5B9E;&#x4F8B;&#x5316; windows</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-keyword">self</span><span class="hljs-variable">.window</span> = [[<span class="hljs-built_in">UIWindow</span> alloc] initWithFrame:[UIScreen mainScreen]<span class="hljs-variable">.bounds</span>];
+<span class="hljs-keyword">self</span><span class="hljs-variable">.window</span><span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> whiteColor];
+[<span class="hljs-keyword">self</span><span class="hljs-variable">.window</span> makeKeyAndVisible];
+</code></pre>
+<ul>
+<li>&#x4FEE;&#x6539;&#x767B;&#x5F55;&#x65B9;&#x6CD5;</li>
+</ul>
+<pre><code class="lang-objc">[[NetworkTools sharedNetwrokTools] userLoginFailed:^{
+    <span class="hljs-built_in">NSNotification</span> *n = [<span class="hljs-built_in">NSNotification</span> notificationWithName:HMUserLoginStatusChangedNotification object:<span class="hljs-string">@&quot;Login&quot;</span>];
+    [<span class="hljs-keyword">self</span> loginStatusChanged:n];
+}];
+</code></pre>
+<h3 id="%E5%85%B6%E4%BB%96">&#x5176;&#x4ED6;</h3>
+<ul>
+<li>&#x901A;&#x77E5;&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x6240;&#x5728;&#x7EBF;&#x7A0B;&#x4E0E;&#x53D1;&#x5E03;&#x901A;&#x77E5;&#x7684;&#x7EBF;&#x7A0B;&#x4E00;&#x81F4;</li>
+<li><code>extern</code> &#x5B9A;&#x4E49;&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#x66F4;&#x5B89;&#x5168;&#xFF0C;&#x662F;&#x7EDD;&#x5927;&#x591A;&#x6570; C &#x8BED;&#x8A00;&#x7A0B;&#x5E8F;&#x91C7;&#x7528;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-comment">///  &#x7528;&#x6237;&#x72B6;&#x6001;&#x53D8;&#x5316;&#x901A;&#x77E5;</span>
+<span class="hljs-keyword">extern</span> <span class="hljs-built_in">NSString</span> * <span class="hljs-keyword">const</span> HMUserLoginStatusChangedNotification;
+
+<span class="hljs-built_in">NSString</span> * <span class="hljs-keyword">const</span> HMUserLoginStatusChangedNotification = <span class="hljs-string">@&quot;HMUserLoginStatusChangedNotification&quot;</span>;
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./user_login-02-save_&amp;_load_user_info.html" class="navigation navigation-prev " aria-label="Previous page: 保存 &amp; 加载用户信息"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./cipher.html" class="navigation navigation-next " aria-label="Next page: 密码学"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

@@ -1,0 +1,1667 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>socket | iOS 网络编程</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="./socket-01-basic_code.html" />
+    
+    
+    <link rel="prev" href="./basic-03-nsurlconnection.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="0.2" data-basepath="." data-revision="Mon Jun 15 2015 01:39:42 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        网络
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1" data-path="basic.html">
+            
+                
+                    <a href="./basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                        基本概念
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1.1" data-path="basic-00-apache.html">
+            
+                
+                    <a href="./basic-00-apache.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.1.</b>
+                        
+                        配置 Apache 服务器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.2" data-path="basic-01-http.html">
+            
+                
+                    <a href="./basic-01-http.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.2.</b>
+                        
+                        HTTP
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.3" data-path="basic-02-dev.html">
+            
+                
+                    <a href="./basic-02-dev.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.3.</b>
+                        
+                        开发方案
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.4" data-path="basic-03-nsurlconnection.html">
+            
+                
+                    <a href="./basic-03-nsurlconnection.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.4.</b>
+                        
+                        NSURLConnection
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="0.2" data-path="socket.html">
+            
+                
+                    <a href="./socket.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                        socket
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.2.1" data-path="socket-01-basic_code.html">
+            
+                
+                    <a href="./socket-01-basic_code.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.1.</b>
+                        
+                        Socket 基本演练
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.2" data-path="socket-02-chat.html">
+            
+                
+                    <a href="./socket-02-chat.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.2.</b>
+                        
+                        Socket 聊天
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.3" data-path="socket-03-baidu.html">
+            
+                
+                    <a href="./socket-03-baidu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.3.</b>
+                        
+                        Socket 加载百度
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3" data-path="serialization.html">
+            
+                
+                    <a href="./serialization.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                        数据解析
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.3.1" data-path="serialization-01-json.html">
+            
+                
+                    <a href="./serialization-01-json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.1.</b>
+                        
+                        JSON 解析
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.3.1.1" data-path="json-01-framework.html">
+            
+                
+                    <a href="./json-01-framework.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.1.1.</b>
+                        
+                        JSON 解析第三方框架
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.2" data-path="serialization-03-plist.html">
+            
+                
+                    <a href="./serialization-03-plist.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.2.</b>
+                        
+                        PList解析
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3" data-path="serialization-04-xml.html">
+            
+                
+                    <a href="./serialization-04-xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.</b>
+                        
+                        XML介绍
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.3.3.1" data-path="xml-01-preparation.html">
+            
+                
+                    <a href="./xml-01-preparation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.1.</b>
+                        
+                        准备工作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3.2" data-path="xml-02-parser.html">
+            
+                
+                    <a href="./xml-02-parser.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.2.</b>
+                        
+                        解析
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3.3" data-path="xml-03-tableview.html">
+            
+                
+                    <a href="./xml-03-tableview.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.3.</b>
+                        
+                        绑定表格
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3.4" data-path="xml-04-copy_properties.html">
+            
+                
+                    <a href="./xml-04-copy_properties.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.4.</b>
+                        
+                        Copy 属性
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3.5" data-path="xml-05-refactor.html">
+            
+                
+                    <a href="./xml-05-refactor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.5.</b>
+                        
+                        重构
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3.6" data-path="xml-06-dom.html">
+            
+                
+                    <a href="./xml-06-dom.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.6.</b>
+                        
+                        DOM 解析
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4" data-path="get_&amp;_post.html">
+            
+                
+                    <a href="./get_&amp;_post.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                        GET &amp; POST
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.4.1" data-path="get_&amp;_post-01-cachedurlresponse.html">
+            
+                
+                    <a href="./get_&amp;_post-01-cachedurlresponse.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.</b>
+                        
+                        GET 缓存
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5" data-path="user_login.html">
+            
+                
+                    <a href="./user_login.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.</b>
+                        
+                        用户登录
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.5.1" data-path="user_login-01-get&amp;post_login.html">
+            
+                
+                    <a href="./user_login-01-get&amp;post_login.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.1.</b>
+                        
+                        GET &amp; POST 登录
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5.2" data-path="user_login-02-save_&amp;_load_user_info.html">
+            
+                
+                    <a href="./user_login-02-save_&amp;_load_user_info.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.2.</b>
+                        
+                        保存 &amp; 加载用户信息
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5.3" data-path="user_login-03-refactor.html">
+            
+                
+                    <a href="./user_login-03-refactor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.3.</b>
+                        
+                        代码重构
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6" data-path="cipher.html">
+            
+                
+                    <a href="./cipher.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.</b>
+                        
+                        密码学
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.6.1" data-path="cipher-01-base64.html">
+            
+                
+                    <a href="./cipher-01-base64.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.1.</b>
+                        
+                        Base64
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.2" data-path="cipher-02-md5.html">
+            
+                
+                    <a href="./cipher-02-md5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.2.</b>
+                        
+                        MD5
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.3" data-path="cipher-03-key_chain.html">
+            
+                
+                    <a href="./cipher-03-key_chain.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.3.</b>
+                        
+                        钥匙串
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.4" data-path="cipher-04-aes.html">
+            
+                
+                    <a href="./cipher-04-aes.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.4.</b>
+                        
+                        对称加密算法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.5" data-path="cipher-05-rsa.html">
+            
+                
+                    <a href="./cipher-05-rsa.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.5.</b>
+                        
+                        非对称加密算法
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7" data-path="post_method.html">
+            
+                
+                    <a href="./post_method.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.</b>
+                        
+                        POST增强
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.7.1" data-path="post_method-01-upload_file.html">
+            
+                
+                    <a href="./post_method-01-upload_file.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.1.</b>
+                        
+                        上传单个文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.2" data-path="post_method-02-upload_multi_files.html">
+            
+                
+                    <a href="./post_method-02-upload_multi_files.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.2.</b>
+                        
+                        上传多个文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.3" data-path="post_method_03_restful.html">
+            
+                
+                    <a href="./post_method_03_restful.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.3.</b>
+                        
+                        RESTful设计风格
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.4" data-path="post_method-04-post_json.html">
+            
+                
+                    <a href="./post_method-04-post_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.4.</b>
+                        
+                        POST JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.5" data-path="post_method-05-post_custom_object.html">
+            
+                
+                    <a href="./post_method-05-post_custom_object.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.5.</b>
+                        
+                        POST 自定义对象
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8" data-path="download.html">
+            
+                
+                    <a href="./download.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.</b>
+                        
+                        NSURLConnection下载
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.8.1" data-path="download-01-head_method.html">
+            
+                
+                    <a href="./download-01-head_method.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.1.</b>
+                        
+                        HTTP HEAD方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.2" data-path="download-02-nsurlconnectiondownloaddelegate.html">
+            
+                
+                    <a href="./download-02-nsurlconnectiondownloaddelegate.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.2.</b>
+                        
+                        NSURLConnectionDownloadDelegate
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.3" data-path="download-03-download_progress.html">
+            
+                
+                    <a href="./download-03-download_progress.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.3.</b>
+                        
+                        下载进度
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.4" data-path="download-04-nsfilehandle.html">
+            
+                
+                    <a href="./download-04-nsfilehandle.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.4.</b>
+                        
+                        NSFileHandle拼接文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.5" data-path="download-05-nsoutputstream.html">
+            
+                
+                    <a href="./download-05-nsoutputstream.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.5.</b>
+                        
+                        NSOutputStream拼接文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.6" data-path="download-06-resume_download.html">
+            
+                
+                    <a href="./download-06-resume_download.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.6.</b>
+                        
+                        断点续传
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.7" data-path="download-07-multithread.html">
+            
+                
+                    <a href="./download-07-multithread.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.7.</b>
+                        
+                        多线程
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.8" data-path="download-08-call_back.html">
+            
+                
+                    <a href="./download-08-call_back.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.8.</b>
+                        
+                        完成回调
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.9" data-path="download-09-pause_download.html">
+            
+                
+                    <a href="./download-09-pause_download.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.9.</b>
+                        
+                        暂停下载
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.10" data-path="download-10-progress_view.html">
+            
+                
+                    <a href="./download-10-progress_view.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.10.</b>
+                        
+                        下载进度视图
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.11" data-path="download-11-download_manager.html">
+            
+                
+                    <a href="./download-11-download_manager.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.11.</b>
+                        
+                        下载管理器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.12" data-path="download-12-nsoperation.html">
+            
+                
+                    <a href="./download-12-nsoperation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.12.</b>
+                        
+                        NSOperation
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9" data-path="nsurlsession.html">
+            
+                
+                    <a href="./nsurlsession.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.</b>
+                        
+                        NSURLSession
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.9.1" data-path="nsurlsession-01-common_code.html">
+            
+                
+                    <a href="./nsurlsession-01-common_code.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.1.</b>
+                        
+                        常见代码
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9.2" data-path="nsurlsession-02-download.html">
+            
+                
+                    <a href="./nsurlsession-02-download.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.2.</b>
+                        
+                        下载 &amp; 解压缩
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.9.2.1" data-path="nsurlsession-02-download-01-progress.html">
+            
+                
+                    <a href="./nsurlsession-02-download-01-progress.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.2.1.</b>
+                        
+                        下载进度跟进
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9.2.2" data-path="nsurlsession-02-download-02-resume_data.html">
+            
+                
+                    <a href="./nsurlsession-02-download-02-resume_data.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.2.2.</b>
+                        
+                        断点续传
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9.2.3" data-path="nsurlsession-02-download-03-download_manager.html">
+            
+                
+                    <a href="./nsurlsession-02-download-03-download_manager.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.2.3.</b>
+                        
+                        下载管理器
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9.3" data-path="nsurlsession-03-webdav.html">
+            
+                
+                    <a href="./nsurlsession-03-webdav.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.3.</b>
+                        
+                        WebDav演练
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9.4" data-path="nsurlsession-04-configuration.html">
+            
+                
+                    <a href="./nsurlsession-04-configuration.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.4.</b>
+                        
+                        Configuration
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9.5" data-path="nsurlsession-05-post_upload.html">
+            
+                
+                    <a href="./nsurlsession-05-post_upload.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.5.</b>
+                        
+                        POST 上传
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.10" data-path="https.html">
+            
+                
+                    <a href="./https.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.10.</b>
+                        
+                        HTTPS
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.11" data-path="afnetworking.html">
+            
+                
+                    <a href="./afnetworking.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.11.</b>
+                        
+                        AFNetworking
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.11.1" data-path="afnetworking-01-demo_app.html">
+            
+                
+                    <a href="./afnetworking-01-demo_app.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.11.1.</b>
+                        
+                        官方演示程序
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.11.2" data-path="afnetworking-02-practise.html">
+            
+                
+                    <a href="./afnetworking-02-practise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.11.2.</b>
+                        
+                        代码演练
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.12" data-path="uiwebview.html">
+            
+                
+                    <a href="./uiwebview.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.12.</b>
+                        
+                        UIWebView
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.13" data-path="charles.html">
+            
+                
+                    <a href="./charles.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.13.</b>
+                        
+                        Charles
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.13.1" data-path="charles-01-163_data.html">
+            
+                
+                    <a href="./charles-01-163_data.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.13.1.</b>
+                        
+                        拦截网易数据
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.14" data-path="biometrics.html">
+            
+                
+                    <a href="./biometrics.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.14.</b>
+                        
+                        指纹识别
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15" data-path="appendix.html">
+            
+                
+                    <a href="./appendix.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.</b>
+                        
+                        附录
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.15.1" data-path="appendix-01-archiver_&amp;_unarchiver.html">
+            
+                
+                    <a href="./appendix-01-archiver_&amp;_unarchiver.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.1.</b>
+                        
+                        归档 &amp; 解档
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.2" data-path="appendix-02-caanimation.html">
+            
+                
+                    <a href="./appendix-02-caanimation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.2.</b>
+                        
+                        核心动画
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.3" data-path="appendix-03-kvo.html">
+            
+                
+                    <a href="./appendix-03-kvo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.3.</b>
+                        
+                        KVO
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.4" data-path="appendix-04-nil&amp;null.html">
+            
+                
+                    <a href="./appendix-04-nil&amp;null.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.4.</b>
+                        
+                        nil&amp;null&amp;Nil&amp;NSNull
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.5" data-path="appendix-http_request_field.html">
+            
+                
+                    <a href="./appendix-http_request_field.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.5.</b>
+                        
+                        常用 HTTP 请求字段
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.6" data-path="appendix-url_properties.html">
+            
+                
+                    <a href="./appendix-url_properties.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.6.</b>
+                        
+                        NSURL常用属性
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.7" data-path="appendix-cocoapods.html">
+            
+                
+                    <a href="./appendix-cocoapods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.7.</b>
+                        
+                        Cocoapods
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >iOS 网络编程</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="socket">socket</h1>
+<h2 id="%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF%E4%B8%89%E8%A6%81%E7%B4%A0">&#x7F51;&#x7EDC;&#x901A;&#x8BAF;&#x4E09;&#x8981;&#x7D20;</h2>
+<ul>
+<li><p>IP&#x5730;&#x5740;(&#x4E3B;&#x673A;&#x540D;)</p>
+<ul>
+<li>&#x7F51;&#x7EDC;&#x4E2D;&#x8BBE;&#x5907;&#x7684;&#x6807;&#x793A;</li>
+<li>&#x4E0D;&#x6613;&#x8BB0;&#x5FC6;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E3B;&#x673A;&#x540D;</li>
+<li>&#x672C;&#x5730;&#x56DE;&#x73AF;&#x5730;&#x5740;&#xFF1A;<code>127.0.0.1</code> &#x4E3B;&#x673A;&#x540D;&#xFF1A;<code>localhost</code><ul>
+<li>&#x6BCF;&#x53F0;&#x8BA1;&#x7B97;&#x673A;&#x90FD;&#x6709;&#x4E00;&#x4E2A; <code>127.0.0.1</code></li>
+<li>&#x5982;&#x679C; 127.0.0.1 <code>ping</code> &#x4E0D;&#x901A;&#xFF0C;&#x8BF4;&#x660E;&#x7F51;&#x5361;&#x4E0D;&#x5DE5;&#x4F5C;</li>
+<li>&#x5982;&#x679C;&#x672C;&#x673A;&#x5730;&#x5740; <code>ping</code> &#x4E0D;&#x901A;&#xFF0C;&#x8BF4;&#x660E;&#x7F51;&#x7EBF;&#x574F;&#x4E86;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x7AEF;&#x53E3;&#x53F7;</p>
+<ul>
+<li>&#x7528;&#x4E8E;&#x6807;&#x793A;&#x8FDB;&#x7A0B;&#x7684;&#x903B;&#x8F91;&#x5730;&#x5740;&#xFF0C;&#x4E0D;&#x540C;&#x8FDB;&#x7A0B;&#x7684;&#x6807;&#x793A;</li>
+<li>&#x6709;&#x6548;&#x7AEF;&#x53E3;&#xFF1A;<code>0~65535</code></li>
+<li>&#x5176;&#x4E2D; <code>0~1024</code>&#x7531;&#x7CFB;&#x7EDF;&#x4F7F;&#x7528;&#x6216;&#x8005;&#x4FDD;&#x7559;&#x7AEF;&#x53E3;</li>
+<li>&#x5F00;&#x53D1;&#x4E2D;&#x4E0D;&#x8981;&#x4F7F;&#x7528; <code>1024</code> &#x4EE5;&#x4E0B;&#x7684;&#x7AEF;&#x53E3;</li>
+</ul>
+</li>
+<li>&#x4F20;&#x8F93;&#x534F;&#x8BAE;<ul>
+<li>TCP(&#x4F20;&#x8F93;&#x63A7;&#x5236;&#x534F;&#x8BAE;)</li>
+<li>UDP(&#x6570;&#x636E;&#x62A5;&#x6587;&#x534F;&#x8BAE;)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>&#x901A;&#x8FC7; <code>IP</code> &#x627E;&#x673A;&#x5668;&#xFF0C;&#x901A;&#x8FC7; <code>&#x7AEF;&#x53E3;</code> &#x627E;&#x7A0B;&#x5E8F;&#xFF0C;&#x901A;&#x8FC7; <code>&#x534F;&#x8BAE;</code> &#x786E;&#x5B9A;&#x5982;&#x4F55;&#x4F20;&#x8F93;&#x6570;&#x636E;</p>
+</blockquote>
+<h2 id="%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B">&#x7F51;&#x7EDC;&#x6A21;&#x578B;</h2>
+<p><img src="images/basic/OSI&#x7F51;&#x7EDC;&#x6A21;&#x578B;&#x793A;&#x610F;&#x56FE;.png" alt=""></p>
+<h3 id="%E7%BD%91%E7%BB%9C%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B">&#x7F51;&#x7EDC;&#x53C2;&#x8003;&#x6A21;&#x578B;</h3>
+<p><img src="images/basic/&#x7F51;&#x7EDC;&#x53C2;&#x8003;&#x6A21;&#x578B;.png" alt=""></p>
+<h3 id="%E5%B8%B8%E8%A7%81%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE">&#x5E38;&#x89C1;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x534F;&#x8BAE;</th>
+<th>&#x7AEF;&#x53E3;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP</td>
+<td>80</td>
+<td>&#x8D85;&#x6587;&#x672C;&#x4F20;&#x8F93;&#x534F;&#x8BAE;</td>
+</tr>
+<tr>
+<td>HTTPS</td>
+<td>443</td>
+<td>HTTP+SSL&#xFF0C;HTTP&#x7684;&#x5B89;&#x5168;&#x7248;</td>
+</tr>
+<tr>
+<td>FTP</td>
+<td>20/21/990</td>
+<td>&#x6587;&#x4EF6;&#x4F20;&#x8F93;&#x534F;&#x8BAE;</td>
+</tr>
+<tr>
+<td>POP</td>
+<td>110</td>
+<td>&#x90AE;&#x5C40;&#x534F;&#x8BAE;</td>
+</tr>
+<tr>
+<td>SMTP</td>
+<td>25</td>
+<td>&#x7B80;&#x5355;&#x90AE;&#x4EF6;&#x4F20;&#x8F93;&#x534F;&#x8BAE;</td>
+</tr>
+<tr>
+<td>telnet</td>
+<td>23</td>
+<td>&#x8FDC;&#x7A0B;&#x7EC8;&#x7AEF;&#x534F;&#x8BAE;</td>
+</tr>
+<tr>
+<td>SSH</td>
+<td>22</td>
+<td>Secure Shell</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tcp-udp">TCP &amp; UDP</h2>
+<ul>
+<li><p>UDP&#xFF08;&#x7528;&#x6237;&#x6570;&#x636E;&#x62A5;&#x534F;&#x8BAE;&#xFF09;</p>
+<ul>
+<li><strong>&#x53EA;&#x7BA1;&#x53D1;&#x9001;&#xFF0C;&#x4E0D;&#x786E;&#x8BA4;&#x5BF9;&#x65B9;&#x662F;&#x5426;&#x63A5;&#x6536;&#x5230;</strong></li>
+<li>&#x5C06;&#x6570;&#x636E;&#x53CA;&#x6E90;&#x548C;&#x76EE;&#x7684;&#x5C01;&#x88C5;&#x6210;&#x6570;&#x636E;&#x5305;&#x4E2D;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;</li>
+<li>&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x62A5;&#x7684;<code>&#x5927;&#x5C0F;&#x9650;&#x5236;&#x5728;64K&#x4E4B;&#x5185;</code></li>
+<li>&#x56E0;&#x4E3A;<code>&#x65E0;&#x9700;&#x8FDE;&#x63A5;</code>&#xFF0C;&#x56E0;&#x6B64;&#x662F;<code>&#x4E0D;&#x53EF;&#x9760;&#x534F;&#x8BAE;</code></li>
+<li>&#x4E0D;&#x9700;&#x8981;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#xFF0C;<code>&#x901F;&#x5EA6;&#x5FEB;</code></li>
+<li>&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF1A;&#x591A;&#x5A92;&#x4F53;&#x6559;&#x5BA4;&#xFF0F;&#x7F51;&#x7EDC;&#x6D41;&#x5A92;&#x4F53;</li>
+</ul>
+</li>
+<li><p>TCP&#xFF08;&#x4F20;&#x8F93;&#x63A7;&#x5236;&#x534F;&#x8BAE;&#xFF09;</p>
+<ul>
+<li>&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#xFF0C;<strong>&#x5F62;&#x6210;&#x4F20;&#x8F93;&#x6570;&#x636E;&#x7684;&#x901A;&#x9053;</strong></li>
+<li>&#x5728;&#x8FDE;&#x63A5;&#x4E2D;&#x8FDB;&#x884C;<code>&#x5927;&#x6570;&#x636E;&#x4F20;&#x8F93;</code>&#xFF08;&#x6570;&#x636E;&#x5927;&#x5C0F;&#x4E0D;&#x6536;&#x9650;&#x5236;&#xFF09;</li>
+<li>&#x901A;&#x8FC7;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x5B8C;&#x6210;&#x8FDE;&#x63A5;&#xFF0C;&#x662F;<code>&#x53EF;&#x9760;&#x534F;&#x8BAE;&#xFF0C;&#x5B89;&#x5168;&#x9001;&#x8FBE;</code></li>
+<li>&#x5FC5;&#x987B;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#xFF0C;<code>&#x6548;&#x7387;&#x4F1A;&#x7A0D;&#x4F4E;</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="socket%EF%BC%88%E5%A5%97%E6%8E%A5%E5%AD%97%E5%B1%82%E3%80%81%E6%8F%92%E5%BA%A7%EF%BC%89">Socket&#xFF08;&#x5957;&#x63A5;&#x5B57;&#x5C42;&#x3001;&#x63D2;&#x5EA7;&#xFF09;</h2>
+<ul>
+<li><code>Socket</code>&#x5C31;&#x662F;&#x4E3A;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x79CD;&#x673A;&#x5236;</li>
+<li>&#x901A;&#x4FE1;&#x7684;&#x4E24;&#x7AEF;&#x90FD;&#x662F; <code>Socket</code></li>
+<li>&#x7F51;&#x7EDC;&#x901A;&#x4FE1;&#x5176;&#x5B9E;&#x5C31;&#x662F; <code>Socket</code> &#x95F4;&#x7684;&#x901A;&#x4FE1;</li>
+<li>&#x6570;&#x636E;&#x5728;&#x4E24;&#x4E2A; <code>Socket</code> &#x95F4;&#x901A;&#x8FC7; <code>IO</code> &#x4F20;&#x8F93;</li>
+<li><code>Socket</code> &#x662F;<code>&#x7EAF;C&#x8BED;&#x8A00;&#x7684;&#xFF0C;&#x662F;&#x8DE8;&#x5E73;&#x53F0;&#x7684;</code></li>
+</ul>
+<h3 id="%E9%80%9A%E8%AE%AF%E7%A4%BA%E6%84%8F%E5%9B%BE">&#x901A;&#x8BAF;&#x793A;&#x610F;&#x56FE;</h3>
+<p><img src="images/basic/socket&#x539F;&#x7406;.jpg" alt=""></p>
+<h3 id="%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7-%E2%80%94%E2%80%94-netcat">&#x8F85;&#x52A9;&#x5DE5;&#x5177; &#x2014;&#x2014; NetCat</h3>
+<ul>
+<li>&#x662F;&#x7EC8;&#x7AEF;&#x4E0B;&#x7528;&#x4E8E;&#x8C03;&#x8BD5;&#x548C;&#x68C0;&#x67E5;&#x7F51;&#x7EDC;&#x7684;&#x5DE5;&#x5177;&#x5305;</li>
+<li>&#x53EF;&#x7528;&#x4E8E;&#x521B;&#x5EFA; TCP/IP &#x8FDE;&#x63A5;</li>
+<li>&#x8FDB;&#x5165;&#x7EC8;&#x7AEF;&#xFF0C;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x6307;&#x4EE4;</li>
+</ul>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x59CB;&#x7EC8;&#x76D1;&#x542C;&#x672C;&#x5730;&#x8BA1;&#x7B97;&#x673A; 12345 &#x7AEF;&#x53E3;&#x7684;&#x6570;&#x636E;</span>
+$ nc -lk <span class="hljs-number">12345</span>
+</code></pre>
+<h3 id="%E5%87%BD%E6%95%B0%E6%B3%A8%E9%87%8A">&#x51FD;&#x6570;&#x6CE8;&#x91CA;</h3>
+<ul>
+<li>socket</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-comment">/**
+ &#x53C2;&#x6570;
+
+ domain:    &#x534F;&#x8BAE;&#x57DF;&#xFF0C;AF_INET&#xFF08;IPV4&#x7684;&#x7F51;&#x7EDC;&#x5F00;&#x53D1;&#xFF09;
+ type:      Socket &#x7C7B;&#x578B;&#xFF0C;SOCK_STREAM(TCP)/SOCK_DGRAM(UDP&#xFF0C;&#x62A5;&#x6587;)
+ protocol:  IPPROTO_TCP&#xFF0C;&#x534F;&#x8BAE;&#xFF0C;&#x5982;&#x679C;&#x8F93;&#x5165;0&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x81EA;&#x52A8;&#x9009;&#x62E9;&#x534F;&#x8BAE;
+
+ &#x8FD4;&#x56DE;&#x503C;
+ socket&#xFF0C;&#x5982;&#x679C; &gt; 0 &#x5C31;&#x8868;&#x793A;&#x6210;&#x529F;
+ */</span>
+<span class="hljs-keyword">self</span><span class="hljs-variable">.clientSocket</span> = socket(AF_INET, SOCK_STREAM, <span class="hljs-number">0</span>);
+</code></pre>
+<ul>
+<li>connect</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-comment">/**
+ &#x53C2;&#x6570;
+ 1&gt; &#x5BA2;&#x6237;&#x7AEF;socket
+ 2&gt; &#x6307;&#x5411;&#x6570;&#x636E;&#x7ED3;&#x6784;sockaddr&#x7684;&#x6307;&#x9488;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC;&#x76EE;&#x7684;&#x7AEF;&#x53E3;&#x548C;IP&#x5730;&#x5740;
+     &#x670D;&#x52A1;&#x5668;&#x7684;&quot;&#x7ED3;&#x6784;&#x4F53;&quot;&#x5730;&#x5740;
+     &#x63D0;&#x793A;&#xFF1A;C &#x8BED;&#x8A00;&#x4E2D;&#x6CA1;&#x6709;&#x5BF9;&#x8C61;
+ 3&gt; &#x7ED3;&#x6784;&#x4F53;&#x6570;&#x636E;&#x957F;&#x5EA6;
+
+ &#x8FD4;&#x56DE;&#x503C;
+    0 &#x6210;&#x529F;/&#x5176;&#x4ED6; &#x9519;&#x8BEF;&#x4EE3;&#x53F7;&#xFF0C;&#x975E;0&#x5373;&#x771F;
+ */</span>
+<span class="hljs-keyword">struct</span> sockaddr_in serverAddr;
+serverAddr<span class="hljs-variable">.sin_family</span> = AF_INET;
+serverAddr<span class="hljs-variable">.sin_addr</span><span class="hljs-variable">.s_addr</span> = inet_addr(<span class="hljs-string">&quot;127.0.0.1&quot;</span>);
+serverAddr<span class="hljs-variable">.sin_port</span> = htons(<span class="hljs-number">12345</span>);
+
+<span class="hljs-keyword">return</span> connect(<span class="hljs-keyword">self</span><span class="hljs-variable">.clientSocket</span>, (<span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> sockaddr *)&amp;serverAddr, <span class="hljs-keyword">sizeof</span>(serverAddr)) == <span class="hljs-number">0</span>;
+</code></pre>
+<ul>
+<li>send</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-comment">/**
+ &#x53C2;&#x6570;
+ 1&gt; &#x5BA2;&#x6237;&#x7AEF;socket
+ 2&gt; &#x53D1;&#x9001;&#x5185;&#x5BB9;&#x5730;&#x5740; void * == id
+ 3&gt; &#x53D1;&#x9001;&#x5185;&#x5BB9;&#x957F;&#x5EA6;
+ 4&gt; &#x53D1;&#x9001;&#x65B9;&#x5F0F;&#x6807;&#x5FD7;&#xFF0C;&#x4E00;&#x822C;&#x4E3A;0
+
+ &#x8FD4;&#x56DE;&#x503C;
+    &#x5982;&#x679C;&#x6210;&#x529F;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x53D1;&#x9001;&#x7684;&#x5B57;&#x8282;&#x6570;&#xFF0C;&#x5931;&#x8D25;&#x5219;&#x8FD4;&#x56DE;SOCKET_ERROR
+ */</span>
+<span class="hljs-built_in">NSString</span> *msg = <span class="hljs-string">@&quot;hello socket&quot;</span>;
+ssize_t sendLen = send(clientSocket, msg<span class="hljs-variable">.UTF8String</span>, strlen(msg<span class="hljs-variable">.UTF8String</span>), <span class="hljs-number">0</span>);
+</code></pre>
+<ul>
+<li>recv</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-comment">/**
+ &#x53C2;&#x6570;
+ 1&gt; &#x5BA2;&#x6237;&#x7AEF;socket
+ 2&gt; &#x63A5;&#x6536;&#x5185;&#x5BB9;&#x7F13;&#x51B2;&#x533A;&#x5730;&#x5740;
+ 3&gt; &#x63A5;&#x6536;&#x5185;&#x5BB9;&#x7F13;&#x5B58;&#x533A;&#x957F;&#x5EA6;
+ 4&gt; &#x63A5;&#x6536;&#x65B9;&#x5F0F;&#xFF0C;0&#x8868;&#x793A;&#x963B;&#x585E;&#xFF0C;&#x5FC5;&#x987B;&#x7B49;&#x5F85;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x6570;&#x636E;
+
+ &#x8FD4;&#x56DE;&#x503C;
+    &#x5982;&#x679C;&#x6210;&#x529F;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x8BFB;&#x5165;&#x7684;&#x5B57;&#x8282;&#x6570;&#xFF0C;&#x5931;&#x8D25;&#x5219;&#x8FD4;&#x56DE;SOCKET_ERROR
+ */</span>
+uint8_t buffer[<span class="hljs-number">1024</span>];
+ssize_t recvLen = recv(<span class="hljs-keyword">self</span><span class="hljs-variable">.clientSocket</span>, buffer, <span class="hljs-keyword">sizeof</span>(buffer), <span class="hljs-number">0</span>);
+</code></pre>
+<ul>
+<li>close</li>
+</ul>
+<pre><code class="lang-objc">close(<span class="hljs-keyword">self</span><span class="hljs-variable">.clientSocket</span>);
+</code></pre>
+<h2 id="%E9%95%BF-%E7%9F%AD%E8%BF%9E%E6%8E%A5-%E5%BF%83%E8%B7%B3%E5%8C%85">&#x957F;/&#x77ED;&#x8FDE;&#x63A5; &amp; &#x5FC3;&#x8DF3;&#x5305;</h2>
+<ul>
+<li><p>&#x77ED;&#x8FDE;&#x63A5;</p>
+<ul>
+<li>&#x6570;&#x636E;&#x8BF7;&#x6C42;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x7ACB;&#x5373;&#x65AD;&#x5F00;&#x8FDE;&#x63A5;</li>
+<li>&#x80FD;&#x591F;&#x53CA;&#x65F6;&#x91CA;&#x653E;&#x670D;&#x52A1;&#x5668;&#x8D44;&#x6E90;</li>
+<li>&#x8BA9;&#x670D;&#x52A1;&#x5668;&#x80FD;&#x591F;&#x4E3A;&#x66F4;&#x591A;&#x7684;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x670D;&#x52A1;</li>
+</ul>
+</li>
+<li><p>&#x957F;&#x8FDE;&#x63A5;</p>
+<ul>
+<li>&#x4E00;&#x65E6;&#x8FDE;&#x63A5;&#x5EFA;&#x7ACB;&#x4E4B;&#x540E;&#xFF0C;&#x59CB;&#x7EC8;&#x4FDD;&#x6301;&#x8FDE;&#x63A5;&#x72B6;&#x6001;</li>
+<li>&#x540E;&#x7EED;&#x53EA;&#x9700;&#x53D1;&#x9001;&#x548C;&#x63A5;&#x6536;&#x6570;&#x636E;&#x5373;&#x53EF;&#xFF0C;&#x6570;&#x636E;&#x54CD;&#x5E94;&#x66F4;&#x53CA;&#x65F6;</li>
+<li>&#x957F;&#x8FDE;&#x63A5;&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x8D44;&#x6E90;&#x5360;&#x7528;&#x6BD4;&#x8F83;&#x5927;</li>
+<li>&#x5BF9;&#x4EA4;&#x4E92;&#x54CD;&#x5E94;&#x8981;&#x6C42;&#x5FEB;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x4F8B;&#x5982;&#x5373;&#x65F6;&#x901A;&#x8BAF;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x957F;&#x8FDE;&#x63A5;</li>
+</ul>
+</li>
+<li><p>&#x5FC3;&#x8DF3;&#x5305;</p>
+<ul>
+<li>&#x662F;&#x68C0;&#x6D4B;&#x957F;&#x8FDE;&#x63A5;&#x7684;&#x91CD;&#x8981;&#x6280;&#x672F;&#x624B;&#x6BB5;</li>
+<li>&#x53EF;&#x4EE5;&#x7531;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;<ul>
+<li>&#x5B9A;&#x65F6;&#x5411;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x5C0F;&#x6570;&#x636E;&#xFF0C;&#x6839;&#x636E;&#x56DE;&#x6267;&#x5224;&#x65AD;&#x5BA2;&#x6237;&#x7AEF;&#x662F;&#x5426;&#x5728;&#x7EBF;</li>
+</ul>
+</li>
+<li>&#x4E5F;&#x53EF;&#x4EE5;&#x7531;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;<ul>
+<li>&#x5B9A;&#x65F6;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x5C0F;&#x6570;&#x636E;&#xFF0C;&#x62A5;&#x544A;&#x5BA2;&#x6237;&#x7AEF;&#x5F53;&#x524D;&#x5728;&#x7EBF;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./basic-03-nsurlconnection.html" class="navigation navigation-prev " aria-label="Previous page: NSURLConnection"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./socket-01-basic_code.html" class="navigation navigation-next " aria-label="Next page: Socket 基本演练"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
