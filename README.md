@@ -10,6 +10,49 @@ XMPP学习资料，来自黑马IOS资料XMPP部分。
 
 ## 目录
 
+### day1
+
+- 网络概念
+- Socket
+- CoreData
+- mac服务器
+
+----
+
+### day2
+
+- 即时通信(Instant Message /IM)的含义
+- XMPP
+- 经典服务器端Openfire
+- XMPPFramework-iOS框架
+- 导航栏渐变透明效果
+
+---
+
+### day3
+
+- 自动重连
+- 心跳检测
+- 好友列表
+- 聊天界面
+- 最近联系人
+
+---
+
+### day4
+
+- 个人资料
+- 头像更换
+- 更新数据
+
+---
+
+### day5
+
+- 02navigation&tab使用
+- 导入群聊功能类
+- 融云SDK
+
 
 
 
