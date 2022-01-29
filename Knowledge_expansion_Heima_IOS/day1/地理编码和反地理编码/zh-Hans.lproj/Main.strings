@@ -1,0 +1,57 @@
+
+/* Class = "UILabel"; text = "经度"; ObjectID = "BLP-ax-9jX"; */
+"BLP-ax-9jX.text" = "经度";
+
+/* Class = "UITabBarItem"; title = "反地理编码"; ObjectID = "CKG-4T-9gT"; */
+"CKG-4T-9gT.title" = "反地理编码";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Cdf-5t-QyZ"; */
+"Cdf-5t-QyZ.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Guu-9t-gwn"; */
+"Guu-9t-gwn.text" = "Label";
+
+/* Class = "UILabel"; text = "纬度"; ObjectID = "HZw-41-bwM"; */
+"HZw-41-bwM.text" = "纬度";
+
+/* Class = "UITabBarItem"; title = "地理编码"; ObjectID = "IX3-kP-BHe"; */
+"IX3-kP-BHe.title" = "地理编码";
+
+/* Class = "UILabel"; text = "请输入纬度"; ObjectID = "QIc-kG-A43"; */
+"QIc-kG-A43.text" = "请输入纬度";
+
+/* Class = "UIButton"; configuration.title = "地理编码"; ObjectID = "RBA-11-Coh"; */
+"RBA-11-Coh.configuration.title" = "地理编码";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RBA-11-Coh"; */
+"RBA-11-Coh.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "反地理编码"; ObjectID = "TY3-Yk-vbp"; */
+"TY3-Yk-vbp.configuration.title" = "反地理编码";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TY3-Yk-vbp"; */
+"TY3-Yk-vbp.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "XID-MR-L5E"; */
+"XID-MR-L5E.text" = "Label";
+
+/* Class = "UILabel"; text = "请输入经度"; ObjectID = "YdM-Ry-Kv3"; */
+"YdM-Ry-Kv3.text" = "请输入经度";
+
+/* Class = "UIViewController"; title = "反地理编码"; ObjectID = "bkP-oa-dKU"; */
+"bkP-oa-dKU.title" = "反地理编码";
+
+/* Class = "UILabel"; text = "城市"; ObjectID = "dhN-xf-t7P"; */
+"dhN-xf-t7P.text" = "城市";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "f7k-6x-Ad8"; */
+"f7k-6x-Ad8.text" = "Label";
+
+/* Class = "UIViewController"; title = "地理编码"; ObjectID = "ghX-TO-tQf"; */
+"ghX-TO-tQf.title" = "地理编码";
+
+/* Class = "UILabel"; text = "详细地址"; ObjectID = "kse-EK-5rl"; */
+"kse-EK-5rl.text" = "详细地址";
+
+/* Class = "UILabel"; text = "请输入地址"; ObjectID = "uMr-UU-Imz"; */
+"uMr-UU-Imz.text" = "请输入地址";

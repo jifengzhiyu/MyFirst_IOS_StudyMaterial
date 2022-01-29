@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3322330FF14E66504131076C /* Pods_____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2019FFDDD4705D27FC6FB8 /* Pods_____.framework */; };
+		3BB0834D277B585D006EC8DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0834C277B585D006EC8DE /* AppDelegate.m */; };
+		3BB08350277B585D006EC8DE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0834F277B585D006EC8DE /* SceneDelegate.m */; };
+		3BB08353277B585D006EC8DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB08352277B585D006EC8DE /* ViewController.m */; };
+		3BB08356277B585D006EC8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB08354277B585D006EC8DE /* Main.storyboard */; };
+		3BB08358277B585F006EC8DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB08357277B585F006EC8DE /* Assets.xcassets */; };
+		3BB0835B277B585F006EC8DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB08359277B585F006EC8DE /* LaunchScreen.storyboard */; };
+		3BB0835E277B585F006EC8DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0835D277B585F006EC8DE /* main.m */; };
+		3BB08364277B58F8006EC8DE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB08363277B58F8006EC8DE /* MapKit.framework */; };
+		3BB0836D277B5949006EC8DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0836C277B5949006EC8DE /* AppDelegate.m */; };
+		3BB08370277B5949006EC8DE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0836F277B5949006EC8DE /* SceneDelegate.m */; };
+		3BB08373277B5949006EC8DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB08372277B5949006EC8DE /* ViewController.m */; };
+		3BB08376277B5949006EC8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB08374277B5949006EC8DE /* Main.storyboard */; };
+		3BB08378277B594B006EC8DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB08377277B594B006EC8DE /* Assets.xcassets */; };
+		3BB0837B277B594B006EC8DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB08379277B594B006EC8DE /* LaunchScreen.storyboard */; };
+		3BB0837E277B594B006EC8DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0837D277B594B006EC8DE /* main.m */; };
+		3BB08382277B59B1006EC8DE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB08363277B58F8006EC8DE /* MapKit.framework */; };
+		3BB0838B277C1768006EC8DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0838A277C1768006EC8DE /* AppDelegate.m */; };
+		3BB0838E277C1768006EC8DE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0838D277C1768006EC8DE /* SceneDelegate.m */; };
+		3BB08391277C1768006EC8DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB08390277C1768006EC8DE /* ViewController.m */; };
+		3BB08394277C1768006EC8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB08392277C1768006EC8DE /* Main.storyboard */; };
+		3BB08396277C1769006EC8DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB08395277C1769006EC8DE /* Assets.xcassets */; };
+		3BB08399277C1769006EC8DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB08397277C1769006EC8DE /* LaunchScreen.storyboard */; };
+		3BB0839C277C1769006EC8DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0839B277C1769006EC8DE /* main.m */; };
+		DCEE475692B51F1074597DBC /* Pods_____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2019FFDDD4705D27FC6FB8 /* Pods_____.framework */; };
+		DFDC1E8681F95BE7A3A04D43 /* Pods_____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2019FFDDD4705D27FC6FB8 /* Pods_____.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3BB08349277B585D006EC8DE /* 地图导航.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "地图导航.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB0834B277B585D006EC8DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3BB0834C277B585D006EC8DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3BB0834E277B585D006EC8DE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3BB0834F277B585D006EC8DE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3BB08351277B585D006EC8DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3BB08352277B585D006EC8DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3BB08355277B585D006EC8DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BB08357277B585F006EC8DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BB0835A277B585F006EC8DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BB0835C277B585F006EC8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BB0835D277B585F006EC8DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3BB08363277B58F8006EC8DE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3BB08369277B5949006EC8DE /* 地图划线.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "地图划线.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB0836B277B5949006EC8DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3BB0836C277B5949006EC8DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3BB0836E277B5949006EC8DE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3BB0836F277B5949006EC8DE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3BB08371277B5949006EC8DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3BB08372277B5949006EC8DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3BB08375277B5949006EC8DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BB08377277B594B006EC8DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BB0837A277B594B006EC8DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BB0837C277B594B006EC8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BB0837D277B594B006EC8DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3BB08387277C1768006EC8DE /* 自带分享.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自带分享.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB08389277C1768006EC8DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3BB0838A277C1768006EC8DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3BB0838C277C1768006EC8DE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3BB0838D277C1768006EC8DE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3BB0838F277C1768006EC8DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3BB08390277C1768006EC8DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3BB08393277C1768006EC8DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BB08395277C1769006EC8DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BB08398277C1769006EC8DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BB0839A277C1769006EC8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BB0839B277C1769006EC8DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3E0EB5245E60F3378EED5470 /* Pods_umengShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_umengShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C2019FFDDD4705D27FC6FB8 /* Pods_____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BB08346277B585D006EC8DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB08364277B58F8006EC8DE /* MapKit.framework in Frameworks */,
+				DCEE475692B51F1074597DBC /* Pods_____.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BB08366277B5949006EC8DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB08382277B59B1006EC8DE /* MapKit.framework in Frameworks */,
+				3322330FF14E66504131076C /* Pods_____.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BB08384277C1768006EC8DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFDC1E8681F95BE7A3A04D43 /* Pods_____.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BB08320277B581B006EC8DE = {
+			isa = PBXGroup;
+			children = (
+				3BB0834A277B585D006EC8DE /* 地图导航 */,
+				3BB0836A277B5949006EC8DE /* 地图划线 */,
+				3BB08388277C1768006EC8DE /* 自带分享 */,
+				3BB0832A277B581B006EC8DE /* Products */,
+				3BB08362277B58F8006EC8DE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3BB0832A277B581B006EC8DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BB08349277B585D006EC8DE /* 地图导航.app */,
+				3BB08369277B5949006EC8DE /* 地图划线.app */,
+				3BB08387277C1768006EC8DE /* 自带分享.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BB0834A277B585D006EC8DE /* 地图导航 */ = {
+			isa = PBXGroup;
+			children = (
+				3BB0834B277B585D006EC8DE /* AppDelegate.h */,
+				3BB0834C277B585D006EC8DE /* AppDelegate.m */,
+				3BB0834E277B585D006EC8DE /* SceneDelegate.h */,
+				3BB0834F277B585D006EC8DE /* SceneDelegate.m */,
+				3BB08351277B585D006EC8DE /* ViewController.h */,
+				3BB08352277B585D006EC8DE /* ViewController.m */,
+				3BB08354277B585D006EC8DE /* Main.storyboard */,
+				3BB08357277B585F006EC8DE /* Assets.xcassets */,
+				3BB08359277B585F006EC8DE /* LaunchScreen.storyboard */,
+				3BB0835C277B585F006EC8DE /* Info.plist */,
+				3BB0835D277B585F006EC8DE /* main.m */,
+			);
+			path = "地图导航";
+			sourceTree = "<group>";
+		};
+		3BB08362277B58F8006EC8DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BB08363277B58F8006EC8DE /* MapKit.framework */,
+				3E0EB5245E60F3378EED5470 /* Pods_umengShare.framework */,
+				5C2019FFDDD4705D27FC6FB8 /* Pods_____.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BB0836A277B5949006EC8DE /* 地图划线 */ = {
+			isa = PBXGroup;
+			children = (
+				3BB0836B277B5949006EC8DE /* AppDelegate.h */,
+				3BB0836C277B5949006EC8DE /* AppDelegate.m */,
+				3BB0836E277B5949006EC8DE /* SceneDelegate.h */,
+				3BB0836F277B5949006EC8DE /* SceneDelegate.m */,
+				3BB08371277B5949006EC8DE /* ViewController.h */,
+				3BB08372277B5949006EC8DE /* ViewController.m */,
+				3BB08374277B5949006EC8DE /* Main.storyboard */,
+				3BB08377277B594B006EC8DE /* Assets.xcassets */,
+				3BB08379277B594B006EC8DE /* LaunchScreen.storyboard */,
+				3BB0837C277B594B006EC8DE /* Info.plist */,
+				3BB0837D277B594B006EC8DE /* main.m */,
+			);
+			path = "地图划线";
+			sourceTree = "<group>";
+		};
+		3BB08388277C1768006EC8DE /* 自带分享 */ = {
+			isa = PBXGroup;
+			children = (
+				3BB08389277C1768006EC8DE /* AppDelegate.h */,
+				3BB0838A277C1768006EC8DE /* AppDelegate.m */,
+				3BB0838C277C1768006EC8DE /* SceneDelegate.h */,
+				3BB0838D277C1768006EC8DE /* SceneDelegate.m */,
+				3BB0838F277C1768006EC8DE /* ViewController.h */,
+				3BB08390277C1768006EC8DE /* ViewController.m */,
+				3BB08392277C1768006EC8DE /* Main.storyboard */,
+				3BB08395277C1769006EC8DE /* Assets.xcassets */,
+				3BB08397277C1769006EC8DE /* LaunchScreen.storyboard */,
+				3BB0839A277C1769006EC8DE /* Info.plist */,
+				3BB0839B277C1769006EC8DE /* main.m */,
+			);
+			path = "自带分享";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BB08348277B585D006EC8DE /* 地图导航 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BB0835F277B585F006EC8DE /* Build configuration list for PBXNativeTarget "地图导航" */;
+			buildPhases = (
+				3C9F9BBE27AD134533998A14 /* [CP] Check Pods Manifest.lock */,
+				3BB08345277B585D006EC8DE /* Sources */,
+				3BB08346277B585D006EC8DE /* Frameworks */,
+				3BB08347277B585D006EC8DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "地图导航";
+			productName = "地图导航";
+			productReference = 3BB08349277B585D006EC8DE /* 地图导航.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BB08368277B5949006EC8DE /* 地图划线 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BB0837F277B594B006EC8DE /* Build configuration list for PBXNativeTarget "地图划线" */;
+			buildPhases = (
+				62864B6AEF0D572642BBBE12 /* [CP] Check Pods Manifest.lock */,
+				3BB08365277B5949006EC8DE /* Sources */,
+				3BB08366277B5949006EC8DE /* Frameworks */,
+				3BB08367277B5949006EC8DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "地图划线";
+			productName = "地图划线";
+			productReference = 3BB08369277B5949006EC8DE /* 地图划线.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BB08386277C1768006EC8DE /* 自带分享 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BB0839F277C1769006EC8DE /* Build configuration list for PBXNativeTarget "自带分享" */;
+			buildPhases = (
+				B1AB3A2CAE85649E1723A0CA /* [CP] Check Pods Manifest.lock */,
+				3BB08383277C1768006EC8DE /* Sources */,
+				3BB08384277C1768006EC8DE /* Frameworks */,
+				3BB08385277C1768006EC8DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "自带分享";
+			productName = "自带分享";
+			productReference = 3BB08387277C1768006EC8DE /* 自带分享.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BB08321277B581B006EC8DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					3BB08348277B585D006EC8DE = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					3BB08368277B5949006EC8DE = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					3BB08386277C1768006EC8DE = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 3BB08324277B581B006EC8DE /* Build configuration list for PBXProject "day2" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BB08320277B581B006EC8DE;
+			productRefGroup = 3BB0832A277B581B006EC8DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BB08348277B585D006EC8DE /* 地图导航 */,
+				3BB08368277B5949006EC8DE /* 地图划线 */,
+				3BB08386277C1768006EC8DE /* 自带分享 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BB08347277B585D006EC8DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB0835B277B585F006EC8DE /* LaunchScreen.storyboard in Resources */,
+				3BB08358277B585F006EC8DE /* Assets.xcassets in Resources */,
+				3BB08356277B585D006EC8DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BB08367277B5949006EC8DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB0837B277B594B006EC8DE /* LaunchScreen.storyboard in Resources */,
+				3BB08378277B594B006EC8DE /* Assets.xcassets in Resources */,
+				3BB08376277B5949006EC8DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BB08385277C1768006EC8DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB08399277C1769006EC8DE /* LaunchScreen.storyboard in Resources */,
+				3BB08396277C1769006EC8DE /* Assets.xcassets in Resources */,
+				3BB08394277C1768006EC8DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C9F9BBE27AD134533998A14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-地图导航-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62864B6AEF0D572642BBBE12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-地图划线-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1AB3A2CAE85649E1723A0CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-自带分享-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BB08345277B585D006EC8DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB08353277B585D006EC8DE /* ViewController.m in Sources */,
+				3BB0834D277B585D006EC8DE /* AppDelegate.m in Sources */,
+				3BB0835E277B585F006EC8DE /* main.m in Sources */,
+				3BB08350277B585D006EC8DE /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BB08365277B5949006EC8DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB08373277B5949006EC8DE /* ViewController.m in Sources */,
+				3BB0836D277B5949006EC8DE /* AppDelegate.m in Sources */,
+				3BB0837E277B594B006EC8DE /* main.m in Sources */,
+				3BB08370277B5949006EC8DE /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BB08383277C1768006EC8DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB08391277C1768006EC8DE /* ViewController.m in Sources */,
+				3BB0838B277C1768006EC8DE /* AppDelegate.m in Sources */,
+				3BB0839C277C1769006EC8DE /* main.m in Sources */,
+				3BB0838E277C1768006EC8DE /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3BB08354277B585D006EC8DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BB08355277B585D006EC8DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BB08359277B585F006EC8DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BB0835A277B585F006EC8DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3BB08374277B5949006EC8DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BB08375277B5949006EC8DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BB08379277B594B006EC8DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BB0837A277B594B006EC8DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3BB08392277C1768006EC8DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BB08393277C1768006EC8DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BB08397277C1769006EC8DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BB08398277C1769006EC8DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BB08340277B581C006EC8DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3BB08341277B581C006EC8DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BB08360277B585F006EC8DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6839A4KRP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "地图导航/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jifengzhiyu-github.www.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BB08361277B585F006EC8DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6839A4KRP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "地图导航/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jifengzhiyu-github.www.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3BB08380277B594B006EC8DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6839A4KRP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "地图划线/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jifengzhiyu-github.www.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BB08381277B594B006EC8DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6839A4KRP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "地图划线/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jifengzhiyu-github.www.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3BB0839D277C1769006EC8DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6839A4KRP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "自带分享/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jifengzhiyu-github.www.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BB0839E277C1769006EC8DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6839A4KRP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "自带分享/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jifengzhiyu-github.www.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BB08324277B581B006EC8DE /* Build configuration list for PBXProject "day2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BB08340277B581C006EC8DE /* Debug */,
+				3BB08341277B581C006EC8DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BB0835F277B585F006EC8DE /* Build configuration list for PBXNativeTarget "地图导航" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BB08360277B585F006EC8DE /* Debug */,
+				3BB08361277B585F006EC8DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BB0837F277B594B006EC8DE /* Build configuration list for PBXNativeTarget "地图划线" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BB08380277B594B006EC8DE /* Debug */,
+				3BB08381277B594B006EC8DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BB0839F277C1769006EC8DE /* Build configuration list for PBXNativeTarget "自带分享" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BB0839D277C1769006EC8DE /* Debug */,
+				3BB0839E277C1769006EC8DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BB08321277B581B006EC8DE /* Project object */;
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ztd-XB-LP6">
+                                <rect key="frame" x="160" y="120" width="280" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="WzU-3W-i7I"/>
+                                    <constraint firstAttribute="width" constant="280" id="mhq-XP-QWF"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhq-1K-xjR">
+                                <rect key="frame" x="20" y="570" width="160" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="MHN-xl-zkN"/>
+                                    <constraint firstAttribute="height" constant="30" id="fWj-QQ-iAi"/>
+                                </constraints>
+                                <state key="normal" title="选择相册"/>
+                                <connections>
+                                    <action selector="selectPhotoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="haf-kY-Qco"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qN-40-Ic9">
+                                <rect key="frame" x="420" y="570" width="160" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0oO-KC-4Ju"/>
+                                    <constraint firstAttribute="width" constant="160" id="Ttk-8R-iMZ"/>
+                                </constraints>
+                                <state key="normal" title="选择相机"/>
+                                <connections>
+                                    <action selector="selectCameClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eB3-T8-Fm0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ztd-XB-LP6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="01A-Kb-5KG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jhq-1K-xjR" secondAttribute="bottom" id="EOb-SA-VRB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4qN-40-Ic9" secondAttribute="bottom" id="YYS-rN-LHa"/>
+                            <constraint firstItem="jhq-1K-xjR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kEF-pf-N8L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4qN-40-Ic9" secondAttribute="trailing" id="x9r-SS-KFT"/>
+                            <constraint firstItem="ztd-XB-LP6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yWA-1p-wA5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageVIew" destination="ztd-XB-LP6" id="33m-oI-6AD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="357"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  day15
+//
+//  Created by 翟佳阳 on 2021/12/24.
+//
+
+// 使用 PCH 的时候，一定要加  __OBJC__ 标示！
+// 否则，一旦程序中导入了 C 程序的框架代码 - 会报非常非常多的错误！
+#ifdef __OBJC__
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__);
+#else
+#define NSLog(...)
+#endif
+
+#endif
