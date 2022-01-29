@@ -1,6 +1,0 @@
-pod 'YYModel'
-pod 'Masonry'
-pod 'SDWebImage'
-pod 'MJRefresh'
-pod 'SVProgressHUD'
-pod 'FMDB'
