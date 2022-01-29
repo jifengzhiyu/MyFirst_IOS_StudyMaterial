@@ -1,0 +1,57 @@
+//
+//  PrefixHeader.pch
+//  MeiTuanHD
+//
+//  Created by apple on 16/3/3.
+//  Copyright © 2016年 itcast. All rights reserved.
+//
+
+
+//小技巧: #ifdef __OBJC__ 如果使用这个宏, 会保证引用的头文件将来值会导入到. m 文件中
+//.c .h .m .mm .cpp
+#ifdef __OBJC__
+
+/** 配置文件*/
+#import "HMConst.h"
+
+/** 分类*/
+#import "UIView+HMCategory.h"
+#import "UIBarButtonItem+HMCategory.h"
+
+/** 第三方库*/
+#import <YYModel/YYModel.h>
+#import <Masonry/Masonry.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <MJRefresh/MJRefresh.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+
+#import "UIView+AutoLayout.h"
+#import "DPAPI.h"
+#import "AwesomeMenu.h"
+
+#endif
+
+
+/** NSLog 输出宏*/
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(...)
+#endif
+
+
+//#ifdef DEBUG
+//#define NSLog(...) NSLog(__VA_ARGS__)
+//#else
+//#define NSLog(...)
+//#endif
+
+/** 颜色宏*/
+#define HMColor(r,g,b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1]
+
+/** 全局颜色宏*/
+#define HMGlobalColor HMColor(230,230,230)
+#define HMColorGreen HMColor(21, 188, 173)
+
+#define HMNotificationCenter [NSNotificationCenter defaultCenter]
+
