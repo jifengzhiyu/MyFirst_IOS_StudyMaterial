@@ -1,0 +1,1113 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>异步加载图像 | 多线程</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="./async_pictures-04-placeholder_picture.html" />
+    
+    
+    <link rel="prev" href="./async_pictures-02-sync_picture.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="0.6.3" data-basepath="." data-revision="Thu Jun 04 2015 06:22:37 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        多线程
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1" data-path="multithread.html">
+            
+                
+                    <a href="./multithread.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                        多线程
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2" data-path="pthread.html">
+            
+                
+                    <a href="./pthread.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                        pthread
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3" data-path="nsthread.html">
+            
+                
+                    <a href="./nsthread.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                        NSThread
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.3.1" data-path="nsthread-01-start_thread.html">
+            
+                
+                    <a href="./nsthread-01-start_thread.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.1.</b>
+                        
+                        创建线程的方式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.2" data-path="nsthread-02-target.html">
+            
+                
+                    <a href="./nsthread-02-target.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.2.</b>
+                        
+                        NSThread 的 Target
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3" data-path="nsthread-03-thread_status.html">
+            
+                
+                    <a href="./nsthread-03-thread_status.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.</b>
+                        
+                        线程状态
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.4" data-path="nsthread-04-properties.html">
+            
+                
+                    <a href="./nsthread-04-properties.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.4.</b>
+                        
+                        线程属性
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.5" data-path="nsthread-05-resource.html">
+            
+                
+                    <a href="./nsthread-05-resource.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.5.</b>
+                        
+                        资源共享
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.6" data-path="nsthread-06-atomic.html">
+            
+                
+                    <a href="./nsthread-06-atomic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.6.</b>
+                        
+                        原子属性
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.7" data-path="nsthread-07-communication.html">
+            
+                
+                    <a href="./nsthread-07-communication.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.7.</b>
+                        
+                        线程间通讯
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4" data-path="gcd.html">
+            
+                
+                    <a href="./gcd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                        GCD
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.4.1" data-path="gcd-01-sync&amp;async.html">
+            
+                
+                    <a href="./gcd-01-sync&amp;async.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.</b>
+                        
+                        同步 &amp; 异步
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.2" data-path="gcd-02-block.html">
+            
+                
+                    <a href="./gcd-02-block.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.2.</b>
+                        
+                        block
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.3" data-path="gcd-03-common_code.html">
+            
+                
+                    <a href="./gcd-03-common_code.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.3.</b>
+                        
+                        GCD 常用代码
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.4" data-path="gcd-04-dispatch_queue_serial.html">
+            
+                
+                    <a href="./gcd-04-dispatch_queue_serial.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.4.</b>
+                        
+                        串行队列
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.5" data-path="gcd-05-dispatch_queue_concurrent.html">
+            
+                
+                    <a href="./gcd-05-dispatch_queue_concurrent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.5.</b>
+                        
+                        并发队列
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.6" data-path="gcd-06-main_queue.html">
+            
+                
+                    <a href="./gcd-06-main_queue.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.6.</b>
+                        
+                        主队列
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.7" data-path="gcd-07-sync_task.html">
+            
+                
+                    <a href="./gcd-07-sync_task.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.7.</b>
+                        
+                        同步任务的作用
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.8" data-path="gcd-08-barrier_async.html">
+            
+                
+                    <a href="./gcd-08-barrier_async.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.8.</b>
+                        
+                        Barrier 异步
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.9" data-path="gcd-09-global_queue.html">
+            
+                
+                    <a href="./gcd-09-global_queue.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.9.</b>
+                        
+                        全局队列
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.10" data-path="gcd-10-delay.html">
+            
+                
+                    <a href="./gcd-10-delay.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.10.</b>
+                        
+                        延迟操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.11" data-path="gcd-11-once.html">
+            
+                
+                    <a href="./gcd-11-once.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.11.</b>
+                        
+                        一次性执行
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.12" data-path="gcd-12-group.html">
+            
+                
+                    <a href="./gcd-12-group.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.12.</b>
+                        
+                        调度组
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5" data-path="nsoperation.html">
+            
+                
+                    <a href="./nsoperation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.</b>
+                        
+                        NSOperation
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.5.1" data-path="nsoperation-01-basic.html">
+            
+                
+                    <a href="./nsoperation-01-basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.1.</b>
+                        
+                        基本演练
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5.2" data-path="nsoperation-02-advance.html">
+            
+                
+                    <a href="./nsoperation-02-advance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.2.</b>
+                        
+                        高级演练
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5.3" data-path="nsoperation-03-nsoperation_vs_gcd.html">
+            
+                
+                    <a href="./nsoperation-03-nsoperation_vs_gcd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.3.</b>
+                        
+                        与 GCD 的对比
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5.4" data-path="nsoperation-04-custom_operation.html">
+            
+                
+                    <a href="./nsoperation-04-custom_operation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.4.</b>
+                        
+                        自定义操作
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6" data-path="async_pictures.html">
+            
+                
+                    <a href="./async_pictures.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.</b>
+                        
+                        异步加载图片
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.6.1" data-path="async_pictures-01-preparation.html">
+            
+                
+                    <a href="./async_pictures-01-preparation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.1.</b>
+                        
+                        搭建界面&amp;数据准备
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.2" data-path="async_pictures-02-sync_picture.html">
+            
+                
+                    <a href="./async_pictures-02-sync_picture.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.2.</b>
+                        
+                        同步加载图像
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="0.6.3" data-path="async_pictures-03-async_load_pictures.html">
+            
+                
+                    <a href="./async_pictures-03-async_load_pictures.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.3.</b>
+                        
+                        异步加载图像
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.4" data-path="async_pictures-04-placeholder_picture.html">
+            
+                
+                    <a href="./async_pictures-04-placeholder_picture.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.4.</b>
+                        
+                        占位图像
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.5" data-path="async_pictures-05-mvc.html">
+            
+                
+                    <a href="./async_pictures-05-mvc.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.5.</b>
+                        
+                        MVC
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.6" data-path="async_pictures-06-operation_cache.html">
+            
+                
+                    <a href="./async_pictures-06-operation_cache.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.6.</b>
+                        
+                        操作缓冲池
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.7" data-path="async_pictures-07-image_cache.html">
+            
+                
+                    <a href="./async_pictures-07-image_cache.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.7.</b>
+                        
+                        图像缓冲池
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.8" data-path="async_pictures-08-refactor.html">
+            
+                
+                    <a href="./async_pictures-08-refactor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.8.</b>
+                        
+                        代码重构
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.9" data-path="async_pictures-09-memory_warning.html">
+            
+                
+                    <a href="./async_pictures-09-memory_warning.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.9.</b>
+                        
+                        内存警告
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.10" data-path="async_pictures-10-black_list.html">
+            
+                
+                    <a href="./async_pictures-10-black_list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.10.</b>
+                        
+                        黑名单
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.11" data-path="async_pictures-11-sandbox_cache.html">
+            
+                
+                    <a href="./async_pictures-11-sandbox_cache.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.11.</b>
+                        
+                        沙盒缓存
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.12" data-path="async_pictures-12-summary.html">
+            
+                
+                    <a href="./async_pictures-12-summary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.12.</b>
+                        
+                        小结
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.13" data-path="async_pictures-13-sdwebimage.html">
+            
+                
+                    <a href="./async_pictures-13-sdwebimage.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.13.</b>
+                        
+                        SDWebImage初体验
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7" data-path="imitate_sdwebimage.html">
+            
+                
+                    <a href="./imitate_sdwebimage.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.</b>
+                        
+                        仿SDWebImage
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.7.1" data-path="imitate_sdwebimage-01-download_operation.html">
+            
+                
+                    <a href="./imitate_sdwebimage-01-download_operation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.1.</b>
+                        
+                        下载操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.2" data-path="imitate_sdwebimage-02-test_download_operation.html">
+            
+                
+                    <a href="./imitate_sdwebimage-02-test_download_operation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.2.</b>
+                        
+                        测试下载操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.3" data-path="imitate_sdwebimage-03-download_manager.html">
+            
+                
+                    <a href="./imitate_sdwebimage-03-download_manager.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.3.</b>
+                        
+                        下载管理器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.4" data-path="imitate_sdwebimage-04-custom_imageview.html">
+            
+                
+                    <a href="./imitate_sdwebimage-04-custom_imageview.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.4.</b>
+                        
+                        自定义 UIImageView
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8" data-path="sdwebimage.html">
+            
+                
+                    <a href="./sdwebimage.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.</b>
+                        
+                        SDWebImage
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.8.1" data-path="sdwebimage-01-framework.html">
+            
+                
+                    <a href="./sdwebimage-01-framework.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.1.</b>
+                        
+                        第三方框架
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.2" data-path="sdwebimage-02-mask_enum.html">
+            
+                
+                    <a href="./sdwebimage-02-mask_enum.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.2.</b>
+                        
+                        位移枚举
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.3" data-path="sdwebimage-03-nscache.html">
+            
+                
+                    <a href="./sdwebimage-03-nscache.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.3.</b>
+                        
+                        NSCache
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.4" data-path="imitate_sdwebimage-05-questions.html">
+            
+                
+                    <a href="./imitate_sdwebimage-05-questions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.4.</b>
+                        
+                        SDWebImage常见面试题
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9" data-path="runloop.html">
+            
+                
+                    <a href="./runloop.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.</b>
+                        
+                        runloop
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.10" data-path="autoreleasepool.html">
+            
+                
+                    <a href="./autoreleasepool.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.10.</b>
+                        
+                        自动释放池
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >多线程</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E5%BC%82%E6%AD%A5%E4%B8%8B%E8%BD%BD%E5%9B%BE%E5%83%8F">&#x5F02;&#x6B65;&#x4E0B;&#x8F7D;&#x56FE;&#x50CF;</h1>
+<h2 id="%E5%85%A8%E5%B1%80%E6%93%8D%E4%BD%9C%E9%98%9F%E5%88%97">&#x5168;&#x5C40;&#x64CD;&#x4F5C;&#x961F;&#x5217;</h2>
+<pre><code class="lang-objc"><span class="hljs-comment">///  &#x5168;&#x5C40;&#x961F;&#x5217;&#xFF0C;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;&#x6240;&#x6709;&#x4E0B;&#x8F7D;&#x64CD;&#x4F5C;</span>
+<span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">strong</span>) NSOperationQueue *downloadQueue;
+</code></pre>
+<ul>
+<li>&#x61D2;&#x52A0;&#x8F7D;</li>
+</ul>
+<pre><code class="lang-objc">- (NSOperationQueue *)downloadQueue {
+    <span class="hljs-keyword">if</span> (_downloadQueue == <span class="hljs-literal">nil</span>) {
+        _downloadQueue = [[NSOperationQueue alloc] init];
+    }
+    <span class="hljs-keyword">return</span> _downloadQueue;
+}
+</code></pre>
+<h2 id="%E5%BC%82%E6%AD%A5%E4%B8%8B%E8%BD%BD">&#x5F02;&#x6B65;&#x4E0B;&#x8F7D;</h2>
+<pre><code class="lang-objc"><span class="hljs-comment">// &#x5F02;&#x6B65;&#x52A0;&#x8F7D;&#x56FE;&#x50CF;</span>
+<span class="hljs-comment">// 1. &#x5B9A;&#x4E49;&#x4E0B;&#x8F7D;&#x64CD;&#x4F5C;</span>
+<span class="hljs-comment">// &#x5F02;&#x6B65;&#x52A0;&#x8F7D;&#x56FE;&#x50CF;</span>
+NSBlockOperation *downloadOp = [NSBlockOperation blockOperationWithBlock:^{
+    <span class="hljs-comment">// 1. &#x6A21;&#x62DF;&#x5EF6;&#x65F6;</span>
+    <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;&#x6B63;&#x5728;&#x4E0B;&#x8F7D; %@&quot;</span>, app<span class="hljs-variable">.name</span>);
+    [<span class="hljs-built_in">NSThread</span> sleepForTimeInterval:<span class="hljs-number">0.5</span>];
+    <span class="hljs-comment">// 2. &#x5F02;&#x6B65;&#x52A0;&#x8F7D;&#x7F51;&#x7EDC;&#x56FE;&#x7247;</span>
+    <span class="hljs-built_in">NSURL</span> *url = [<span class="hljs-built_in">NSURL</span> URLWithString:app<span class="hljs-variable">.icon</span>];
+    <span class="hljs-built_in">NSData</span> *data = [<span class="hljs-built_in">NSData</span> dataWithContentsOfURL:url];
+    <span class="hljs-built_in">UIImage</span> *image = [<span class="hljs-built_in">UIImage</span> imageWithData:data];
+
+    <span class="hljs-comment">// 3. &#x4E3B;&#x7EBF;&#x7A0B;&#x66F4;&#x65B0; UI</span>
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+        cell<span class="hljs-variable">.imageView</span><span class="hljs-variable">.image</span> = image;
+    }];
+}];
+
+<span class="hljs-comment">// 2. &#x5C06;&#x4E0B;&#x8F7D;&#x64CD;&#x4F5C;&#x6DFB;&#x52A0;&#x5230;&#x961F;&#x5217;</span>
+[<span class="hljs-keyword">self</span><span class="hljs-variable">.downloadQueue</span> addOperation:downloadOp];
+</code></pre>
+<blockquote>
+<p>&#x8FD0;&#x884C;&#x6D4B;&#x8BD5;</p>
+</blockquote>
+<h2 id="%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98">&#x5B58;&#x5728;&#x7684;&#x95EE;&#x9898;</h2>
+<ul>
+<li>&#x4E0B;&#x8F7D;&#x5B8C;&#x6210;&#x540E;&#x4E0D;&#x73B0;&#x5B9E;&#x56FE;&#x7247;</li>
+</ul>
+<p>&#x539F;&#x56E0;&#x5206;&#x6790;&#xFF1A;</p>
+<ul>
+<li>&#x4F7F;&#x7528;&#x7684;&#x662F;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x7684; cell</li>
+<li>&#x5F02;&#x6B65;&#x65B9;&#x6CD5;&#x4E2D;&#x53EA;&#x8BBE;&#x7F6E;&#x4E86;&#x56FE;&#x50CF;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E; frame</li>
+<li>&#x56FE;&#x50CF;&#x52A0;&#x8F7D;&#x540E;&#xFF0C;&#x4E00;&#x65E6;&#x4E0E; cell &#x4EA4;&#x4E92;&#xFF0C;&#x4F1A;&#x8C03;&#x7528; cell &#x7684; <code>layoutSubviews</code> &#x65B9;&#x6CD5;&#xFF0C;&#x91CD;&#x65B0;&#x8C03;&#x6574; cell &#x7684;&#x5E03;&#x5C40;</li>
+</ul>
+<h2 id="%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95">&#x89E3;&#x51B3;&#x529E;&#x6CD5;</h2>
+<ul>
+<li>&#x4F7F;&#x7528;&#x5360;&#x4F4D;&#x56FE;&#x50CF;</li>
+<li>&#x81EA;&#x5B9A;&#x4E49; Cell</li>
+</ul>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#x6F14;&#x793A;&#x4E0D;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x66F4;&#x65B0;&#x56FE;&#x50CF;&#x7684;&#x6548;&#x679C;</p>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./async_pictures-02-sync_picture.html" class="navigation navigation-prev " aria-label="Previous page: 同步加载图像"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./async_pictures-04-placeholder_picture.html" class="navigation navigation-next " aria-label="Next page: 占位图像"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
