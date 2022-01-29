@@ -1,6 +1,0 @@
-framework module HMFramework {
-  umbrella header "HMFramework.h"
-
-  export *
-  module * { export * }
-}
