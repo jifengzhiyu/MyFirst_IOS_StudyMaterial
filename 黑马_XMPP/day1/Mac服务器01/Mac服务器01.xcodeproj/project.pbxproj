@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18718CCF1C7C478400A0ED26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18718CCE1C7C478400A0ED26 /* AppDelegate.m */; };
+		18718CD21C7C478400A0ED26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18718CD11C7C478400A0ED26 /* main.m */; };
+		18718CD51C7C478400A0ED26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18718CD41C7C478400A0ED26 /* ViewController.m */; };
+		18718CD71C7C478400A0ED26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18718CD61C7C478400A0ED26 /* Assets.xcassets */; };
+		18718CDA1C7C478400A0ED26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18718CD81C7C478400A0ED26 /* Main.storyboard */; };
+		18718CE41C7C47A000A0ED26 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 18718CE31C7C47A000A0ED26 /* GCDAsyncSocket.m */; };
+		18718CE71C7C4D2000A0ED26 /* HMClientManagerCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18718CE61C7C4D2000A0ED26 /* HMClientManagerCoreData.m */; };
+		18718CEA1C7C4E1F00A0ED26 /* Client.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18718CE81C7C4E1F00A0ED26 /* Client.xcdatamodeld */; };
+		18718CEF1C7C52A800A0ED26 /* Client+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 18718CEC1C7C52A800A0ED26 /* Client+CoreDataProperties.m */; };
+		18718CF01C7C52A800A0ED26 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 18718CEE1C7C52A800A0ED26 /* Client.m */; };
+		18718CF31C7C57C300A0ED26 /* HMMoreClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18718CF21C7C57C300A0ED26 /* HMMoreClientViewController.m */; };
+		18D2BD251C7E8C24005E3383 /* HMSendClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D2BD241C7E8C24005E3383 /* HMSendClientViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18718CCA1C7C478400A0ED26 /* Mac服务器01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mac服务器01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18718CCD1C7C478400A0ED26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18718CCE1C7C478400A0ED26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18718CD11C7C478400A0ED26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18718CD31C7C478400A0ED26 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18718CD41C7C478400A0ED26 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18718CD61C7C478400A0ED26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18718CD91C7C478400A0ED26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18718CDB1C7C478400A0ED26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18718CE21C7C47A000A0ED26 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		18718CE31C7C47A000A0ED26 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		18718CE51C7C4D2000A0ED26 /* HMClientManagerCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMClientManagerCoreData.h; sourceTree = "<group>"; };
+		18718CE61C7C4D2000A0ED26 /* HMClientManagerCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMClientManagerCoreData.m; sourceTree = "<group>"; };
+		18718CE91C7C4E1F00A0ED26 /* Client.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Client.xcdatamodel; sourceTree = "<group>"; };
+		18718CEB1C7C52A800A0ED26 /* Client+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Client+CoreDataProperties.h"; sourceTree = "<group>"; };
+		18718CEC1C7C52A800A0ED26 /* Client+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Client+CoreDataProperties.m"; sourceTree = "<group>"; };
+		18718CED1C7C52A800A0ED26 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		18718CEE1C7C52A800A0ED26 /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
+		18718CF11C7C57C300A0ED26 /* HMMoreClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMMoreClientViewController.h; sourceTree = "<group>"; };
+		18718CF21C7C57C300A0ED26 /* HMMoreClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMMoreClientViewController.m; sourceTree = "<group>"; };
+		18D2BD231C7E8C24005E3383 /* HMSendClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSendClientViewController.h; sourceTree = "<group>"; };
+		18D2BD241C7E8C24005E3383 /* HMSendClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSendClientViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18718CC71C7C478400A0ED26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18718CC11C7C478400A0ED26 = {
+			isa = PBXGroup;
+			children = (
+				18718CE11C7C479000A0ED26 /* Lib */,
+				18718CCC1C7C478400A0ED26 /* Mac服务器01 */,
+				18718CCB1C7C478400A0ED26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18718CCB1C7C478400A0ED26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18718CCA1C7C478400A0ED26 /* Mac服务器01.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18718CCC1C7C478400A0ED26 /* Mac服务器01 */ = {
+			isa = PBXGroup;
+			children = (
+				18718CCD1C7C478400A0ED26 /* AppDelegate.h */,
+				18718CCE1C7C478400A0ED26 /* AppDelegate.m */,
+				18718CD31C7C478400A0ED26 /* ViewController.h */,
+				18718CD41C7C478400A0ED26 /* ViewController.m */,
+				18718CF11C7C57C300A0ED26 /* HMMoreClientViewController.h */,
+				18718CF21C7C57C300A0ED26 /* HMMoreClientViewController.m */,
+				18D2BD231C7E8C24005E3383 /* HMSendClientViewController.h */,
+				18D2BD241C7E8C24005E3383 /* HMSendClientViewController.m */,
+				18718CD61C7C478400A0ED26 /* Assets.xcassets */,
+				18718CD81C7C478400A0ED26 /* Main.storyboard */,
+				18718CDB1C7C478400A0ED26 /* Info.plist */,
+				18718CD01C7C478400A0ED26 /* Supporting Files */,
+			);
+			path = "Mac服务器01";
+			sourceTree = "<group>";
+		};
+		18718CD01C7C478400A0ED26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18718CD11C7C478400A0ED26 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18718CE11C7C479000A0ED26 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				18718CE21C7C47A000A0ED26 /* GCDAsyncSocket.h */,
+				18718CE31C7C47A000A0ED26 /* GCDAsyncSocket.m */,
+				18718CE51C7C4D2000A0ED26 /* HMClientManagerCoreData.h */,
+				18718CE61C7C4D2000A0ED26 /* HMClientManagerCoreData.m */,
+				18718CEB1C7C52A800A0ED26 /* Client+CoreDataProperties.h */,
+				18718CEC1C7C52A800A0ED26 /* Client+CoreDataProperties.m */,
+				18718CED1C7C52A800A0ED26 /* Client.h */,
+				18718CEE1C7C52A800A0ED26 /* Client.m */,
+				18718CE81C7C4E1F00A0ED26 /* Client.xcdatamodeld */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18718CC91C7C478400A0ED26 /* Mac服务器01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18718CDE1C7C478400A0ED26 /* Build configuration list for PBXNativeTarget "Mac服务器01" */;
+			buildPhases = (
+				18718CC61C7C478400A0ED26 /* Sources */,
+				18718CC71C7C478400A0ED26 /* Frameworks */,
+				18718CC81C7C478400A0ED26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mac服务器01";
+			productName = "Mac服务器01";
+			productReference = 18718CCA1C7C478400A0ED26 /* Mac服务器01.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18718CC21C7C478400A0ED26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = itheima;
+				TargetAttributes = {
+					18718CC91C7C478400A0ED26 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 18718CC51C7C478400A0ED26 /* Build configuration list for PBXProject "Mac服务器01" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18718CC11C7C478400A0ED26;
+			productRefGroup = 18718CCB1C7C478400A0ED26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18718CC91C7C478400A0ED26 /* Mac服务器01 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18718CC81C7C478400A0ED26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18718CD71C7C478400A0ED26 /* Assets.xcassets in Resources */,
+				18718CDA1C7C478400A0ED26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18718CC61C7C478400A0ED26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18718CE41C7C47A000A0ED26 /* GCDAsyncSocket.m in Sources */,
+				18718CD51C7C478400A0ED26 /* ViewController.m in Sources */,
+				18718CF01C7C52A800A0ED26 /* Client.m in Sources */,
+				18718CEA1C7C4E1F00A0ED26 /* Client.xcdatamodeld in Sources */,
+				18718CD21C7C478400A0ED26 /* main.m in Sources */,
+				18718CCF1C7C478400A0ED26 /* AppDelegate.m in Sources */,
+				18D2BD251C7E8C24005E3383 /* HMSendClientViewController.m in Sources */,
+				18718CF31C7C57C300A0ED26 /* HMMoreClientViewController.m in Sources */,
+				18718CE71C7C4D2000A0ED26 /* HMClientManagerCoreData.m in Sources */,
+				18718CEF1C7C52A800A0ED26 /* Client+CoreDataProperties.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18718CD81C7C478400A0ED26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18718CD91C7C478400A0ED26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18718CDC1C7C478400A0ED26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		18718CDD1C7C478400A0ED26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		18718CDF1C7C478400A0ED26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Mac服务器01/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.itheima.Mac---01";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18718CE01C7C478400A0ED26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Mac服务器01/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.itheima.Mac---01";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18718CC51C7C478400A0ED26 /* Build configuration list for PBXProject "Mac服务器01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18718CDC1C7C478400A0ED26 /* Debug */,
+				18718CDD1C7C478400A0ED26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18718CDE1C7C478400A0ED26 /* Build configuration list for PBXNativeTarget "Mac服务器01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18718CDF1C7C478400A0ED26 /* Debug */,
+				18718CE01C7C478400A0ED26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18718CE81C7C4E1F00A0ED26 /* Client.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18718CE91C7C4E1F00A0ED26 /* Client.xcdatamodel */,
+			);
+			currentVersion = 18718CE91C7C4E1F00A0ED26 /* Client.xcdatamodel */;
+			path = Client.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18718CC21C7C478400A0ED26 /* Project object */;
+}
