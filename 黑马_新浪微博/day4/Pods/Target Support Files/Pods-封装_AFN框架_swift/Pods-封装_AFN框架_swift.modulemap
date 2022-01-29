@@ -1,6 +1,0 @@
-framework module Pods____AFN___swift {
-  umbrella header "Pods-封装_AFN框架_swift-umbrella.h"
-
-  export *
-  module * { export * }
-}
