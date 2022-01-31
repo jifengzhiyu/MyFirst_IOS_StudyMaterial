@@ -299,7 +299,7 @@ extension WBMainViewController {
         var arrayM = [UIViewController]()
         for dict in array! {
             
-            arrayM.append(controller(dict: dict))
+            arrayM. append(controller(dict: dict))
         }
         
         // 设置 tabBar 的子控制器
